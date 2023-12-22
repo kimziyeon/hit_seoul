@@ -1,0 +1,11 @@
+// index.scss
+@import url("reset.css");
+
+$mobile : 480px;
+$tablet : 768px;
+
+@mixin res($n){
+    @media (max-width:$n) {
+        @content;
+    }
+};
