@@ -1,0 +1,117 @@
+@import "reset.css";
+
+header{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #999999;
+    overflow: hidden;
+    height:300px;
+    .inner{
+        background-color: #fff;
+        .header-bundle{
+            
+            width: 60%;
+            margin: 0 auto;
+            
+            .top-wrap{
+                display: flex;
+                justify-content: space-between;
+                position: absolute;
+                width: calc(60% - 20px);
+                max-width: 1536px;
+                align-items: center;
+                h1{
+                    img{
+                        width: 43px;
+                    }
+                }
+            }
+            .nav-wrap{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                nav{
+                    .list{
+                        display: flex;
+                        text-align: center;
+                        .hd-menu-iteam{
+                            padding: 0 57px;
+                            color: #424242;
+                            .menu-title{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                height: 60px;
+                            }
+                            .sub-menu{
+                                position: absolute;
+                                display: flex;
+                                
+                                margin-top: 30px;
+                                ul{
+                                    li{
+                                        padding-bottom: 25px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }  
+    
+}
+
+footer{
+    width: 60%;
+    margin: 0 auto;
+    .ft-wrap{
+        display: flex;
+        flex-direction: column;
+        .nav-wrap{
+            display: flex;
+            justify-content: space-between;
+            a{
+                img{
+                    width: 139px;
+                }
+            }
+            >div{
+                display: flex;
+                align-items: center;
+                .ft-nav{
+                    a{
+                        margin-right: 1.4vw;
+                    }
+                }
+                .sns-wrap{
+                    display: flex;
+                    li{
+                        margin: 0 0.5vw;
+                        a{
+                            img{
+                                width: 33px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer-nav{
+            border-top: 1px solid black;
+            padding: 17px 0 70px 0;
+            ul{
+                li{
+                    display: flex;
+                    justify-content: flex-end;
+                    p{
+                        color: #999999;
+                    }
+                }
+            }
+        }
+    }
+}
