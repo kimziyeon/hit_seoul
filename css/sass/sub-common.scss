@@ -1,0 +1,174 @@
+@import "reset.css";
+body{
+    height: 3000px;
+}
+header{
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    // position: relative;
+    // transform: translateY(-100%);
+    background-color: #f1f1f1;
+    overflow: hidden;
+    height:88px;
+    transition: all ease 0.5s;
+    &:hover{
+        height: 300px;
+    }
+    .inner{
+        background-color: #fff;
+        .header-bundle{
+            
+            width: 60%;
+            margin: 0 auto;
+            height: 88px;
+            
+            .top-wrap{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: absolute;
+                width: calc(60% - 20px);
+                max-width: 1536px;
+                height: 88px;
+                h1{
+                    img{
+                        width: 43px;
+                    }
+                }
+            }
+            .nav-wrap{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                z-index: 2;
+                height: 100%;
+                nav{
+                    .list{
+                        display: flex;
+                        text-align: center;
+                        .hd-menu-iteam{
+                            padding: 0 57px;
+                            color: #f1f1f1;
+                            display: flex;
+                            justify-content: center;
+                            .menu-title{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                height: 60px;
+                                &:hover{
+                                    color: #0181c9;
+                                }
+                            }
+                            .sub-menu{
+                                position: absolute;
+                                display: flex;
+                                
+                                margin-top: 115px;
+                                ul{
+                                    li{
+                                        padding-bottom: 25px;
+                                        span{
+                                            &:hover{
+                                                color: #0181c9;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }  
+    
+}
+
+aside{
+    position: fixed;
+    border-radius: 50%;
+    width: 53px; height: 53px;
+    background-color: #d9d9d9;
+    bottom: 40px; right: 40px;
+    opacity: 0;
+    transition: all ease 0.5s;
+    &:hover{
+        background-color: black;
+        img{
+                filter: invert(100%);
+        }
+    }
+    img{
+        width: 60%; height: 60%;
+        position: absolute;
+        top: 20%; left: 18%;
+        transition: all ease 0.5s;
+        
+    }
+}
+.nohide{
+    opacity: 1;
+}
+
+
+footer{
+    width: 60%;
+    margin: 0 auto;
+    // position: relative;
+    // transform: translateY(100%);
+    .ft-wrap{
+        display: flex;
+        flex-direction: column;
+
+        .nav-wrap{
+            display: flex;
+            justify-content: space-between;
+            height: 100px;
+            align-items: center;
+            border-bottom: 1px solid black;
+            a{
+                img{
+                    width: 139px;
+                }
+            }
+            >div{
+                display: flex;
+                align-items: center;
+                .ft-nav{
+                    a{
+                        margin-right: 1.4vw;
+                    }
+                }
+                .sns-wrap{
+                    display: flex;
+                    li{
+                        margin: 0 0.5vw;
+                        a{
+                            img{
+                                width: 33px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer-info{
+            ul{
+                padding: 14px 0 70px 0;
+                .sit-map{
+                    display: flex;
+                    justify-content: flex-end;
+                }
+                li{
+                    p{
+                        text-align: end;
+                        color: #999999;
+                    }
+                }
+            }
+        }
+    }
+}
