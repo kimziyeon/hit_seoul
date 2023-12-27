@@ -1,7 +1,4 @@
 @import "reset.css";
-body{
-    height: 3000px;
-}
 header{
     width: 100%;
     margin: 0 auto;
@@ -49,7 +46,7 @@ header{
                         display: flex;
                         text-align: center;
                         .hd-menu-iteam{
-                            padding: 0 57px;
+                            padding: 0 3vw;
                             color: #f1f1f1;
                             display: flex;
                             justify-content: center;
@@ -124,6 +121,28 @@ aside{
     opacity: 1;
 }
 
+section{
+    width: 60%;
+    margin: 0 auto;
+    .intro-wrap{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 44px 0; margin: 197px 0 167px 0;
+        h2{
+            font-size: 1.5rem;
+        }
+        .intro-line {
+            border: 1px solid #d9d9d9;
+            width: 1px; height: 86px;
+        }
+        .intro-text-box{
+            width: 40vw;
+        }
+    }
+}
 
 footer{
     width: 60%;

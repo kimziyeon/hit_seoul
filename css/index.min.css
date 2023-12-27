@@ -1,1 +1,1 @@
-@import"reset.css"
+@import"reset.css";header{position:fixed;border:1px solid #000;width:100%}header .index-head-bundle{width:80%;margin:0 auto}header .index-head-bundle .header-menu-wrap{display:flex;justify-content:space-between;align-items:center}header .index-head-bundle .header-menu-wrap h1 img{height:57px;width:53px}header .index-head-bundle .header-menu-wrap .header-menu-item{display:flex;align-items:center}header .index-head-bundle .header-menu-wrap .header-menu-item a{color:#fff;padding:0 3vw}.sct1{width:100%;height:100vh;background:url(../../img/index/index_1.jpg)}

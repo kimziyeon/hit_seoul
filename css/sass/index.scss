@@ -9,3 +9,38 @@ $tablet : 768px;
         @content;
     }
 };
+
+header{
+        position: fixed;
+        border: 1px solid black;
+        width: 100%;
+    .index-head-bundle{
+        width: 80%;
+        margin: 0 auto;
+        .header-menu-wrap{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h1{
+                img{
+                    height: 57px; width: 53px;
+                }
+            }
+            .header-menu-item{
+                display: flex;
+                align-items: center;
+
+                a{
+                    color: #ffffff;
+                    padding: 0 3vw;
+                }
+            }
+        }
+    }
+}
+
+.sct1{
+    width: 100%;
+    height: 100vh;
+    background: url(../../img/index/index_1.jpg);
+}
