@@ -15,7 +15,7 @@ main{
         align-items: center;
 
         &.history {
-            justify-content: space-evenly;
+            justify-content: left;
         }
 
         >div{
@@ -27,10 +27,17 @@ main{
 
             position: relative;
             overflow: hidden;
+
             background: url("") 0 0 / cover no-repeat;
+            background-color: rgba(0, 0, 0, 0.6);
+            background-blend-mode: hue;
 
             &:hover span{
                 transform: translateY(-100%);
+            }
+
+            &:hover {
+                background-blend-mode: normal;
             }
 
             >a{
@@ -43,14 +50,14 @@ main{
                     top: 50%;
 
                     transform: translate(-50%, -50%);
-                    height: 72px;
+                    height: 50px;
 
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     overflow: hidden;
                     
-                    font-size: 3rem;
+                    font-size: 2rem;
                     font-weight: bold;
                     color: white;
                     transition: 0.5s;
@@ -141,24 +148,30 @@ main{
             }
         }
 
-        @for $i from 1 through 2{
+        @for $i from 1 through 3{
             &.history > div:nth-child(#{$i}){
-                background-image: url("../img/inlaw/menu_#{$i}.jpg");
+                background-image: url("../img/history/menu_#{$i}.jpg");
             }
         }
 
         &.history > div {
             &:nth-child(1){
-                background-position: 0 85%;
+                background-position: 0 54%;
             }
             &:nth-child(1):hover{
-                background-position: 0 50%;
+                background-position: 0 11%;
             }
             &:nth-child(2){
                 background-position: 0 50%;
             }
             &:nth-child(2):hover{
                 background-position: 0 0;
+            }
+            &:nth-child(3){
+                background-position: 0 100%;
+            }
+            &:nth-child(3):hover{
+                background-position: 0 50%;
             }
         }
 
