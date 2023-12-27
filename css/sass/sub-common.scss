@@ -7,10 +7,11 @@ header{
     margin: 0 auto;
     position: fixed;
     // position: relative;
+    // transform: translateY(-100%);
     background-color: #f1f1f1;
     overflow: hidden;
     height:88px;
-    transition: all ease 1s;
+    transition: all ease 0.5s;
     &:hover{
         height: 300px;
     }
@@ -86,15 +87,30 @@ header{
     
 }
 
-.top-scroll{
-        // display: none;
-        position: fixed;
-        bottom: 40px; right: 40px;
-        z-index: 99;
-        background-color: #d9d9d9;
-        width: 54px; height: 54px;
-        border: 1px solid black;
-        border-radius: 50%;
+aside{
+    position: fixed;
+    border-radius: 50%;
+    width: 53px; height: 53px;
+    background-color: #d9d9d9;
+    bottom: 40px; right: 40px;
+    opacity: 0;
+    transition: all ease 0.5s;
+    &:hover{
+        background-color: black;
+        img{
+                filter: invert(100%);
+        }
+    }
+    img{
+        width: 60%; height: 60%;
+        position: absolute;
+        top: 20%; left: 18%;
+        transition: all ease 0.5s;
+        
+    }
+}
+.nohide{
+    opacity: 1;
 }
 
 
