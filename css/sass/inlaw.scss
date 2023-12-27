@@ -1,3 +1,153 @@
 // inlaw.scss
 @import "_common.scss";
 
+body{
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+    main{
+        .banner-img{
+            >p{
+                >img{}
+            }
+        }
+        section{
+            .intro-wrap{
+                >h2{}
+                .intro-line{}
+                .intro-text-box{
+                    >p{}
+                }
+            }
+        }
+        .history{
+            margin: 157px auto;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            >article{
+                width: 50%;
+                >h2{
+                    font-size: 24px;
+                    font-weight: bold;
+                    padding-bottom: 20px;
+                }
+                >div{
+                    >div{
+                        padding-bottom: 20px;
+                    }
+                    >div{}
+                }
+            }
+            >div{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                >figure{width: 100%;
+                    >img{
+                        width: 100%;
+                        padding-bottom: 10px;
+                    }
+                    >figcaption{
+                        display: none;
+                        >p:nth-child(1){}
+                        >p:nth-child(2){}
+                    }
+                }
+                >figure{
+                    >img{}
+                    >figcaption{
+                        >p:nth-child(1){}
+                        >p:nth-child(2){}
+                    }
+                }
+            }
+        }
+        .logo{
+            >p{
+                display: flex;
+                justify-content: flex-end;
+                padding-bottom: 65px;
+            }
+            >div{
+                >figure{
+                    >img{width: 100%;}
+                    >figcaption{
+                        text-align: center;
+                        padding-top: 15px;
+                        margin-bottom: 100px;
+                    }
+                }
+            }
+        }
+        .color_code{
+            width: 100%;
+            >p{
+                display: flex;
+                justify-content: flex-end;
+                padding-bottom: 65px;
+            }
+            .outer-box{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                >div{
+                    border: 1px solid #ddd;
+                    width: 30%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 35px 20px;
+                    text-align: center;
+                    >div{
+                        display: flex;
+                        flex-direction: column;
+                        >div{
+                            >b{
+                            }
+                            >p{
+                                padding: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .color_click{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 40px;
+                margin-bottom: 40px;
+                text-align: center;
+                >div{
+                    width: 30%;
+                    
+                    span{
+                        display: inline-block;
+                        height: 24px;
+                        background-color: #AE1932;
+                        border-radius: 100px;
+                        padding: 0 20px;
+                    }
+                }
+                .red{
+                    background-color: #AE1932;
+                }
+                .blue{
+                    background-color: #0079BC;
+                }
+                .green{
+                    background-color: #2E853C;
+                }
+            }
+        }
+    }
+}
