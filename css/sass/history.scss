@@ -1,3 +1,91 @@
 // history.scss
 @import "_common.scss";
 
+main{
+    width: 60%;
+    margin: 0 auto;
+    .his-sub-sct1{
+        .sub-sct1-bundle{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            border-bottom: 1px solid black;
+            padding-bottom: 150px;
+            .sub-sct1_text-box{
+                width: 42%;
+                h2{
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    padding-bottom: 10px;
+                }
+            }
+            .sub-sct-img-box{
+                >div{
+                    position: relative;
+                    width: 100%; height: 100%;
+                    &:nth-child(1){
+                        margin-bottom: 20px;
+                    }
+                    &:hover .img-text-box{
+                        opacity: 1;
+                    }
+                    img{
+                        width: 100%; height: 100%;
+                    }
+                    .img-text-box{
+                        position: absolute;
+                        top: 50%; left: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        transform: translate(-50%,-50%);
+                        color: #ffffff;
+                        text-align: center;
+                        background-color: rgb(0, 0, 0, 50%);
+                        width: 100%; height: 100%;
+                        opacity: 0;
+                        transition: all ease 0.3s;
+                        h3{
+                            color: #ffffff;
+                            padding-bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .his-sub-sct2{
+        h2{
+            text-align: end;
+            margin-top: 20px;
+        }
+        article{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 60px;
+            .sub-history-img-box{
+                width: 50vw; height: 22vw;
+                img{
+                    width: 100%; height: 100%;
+                } 
+            }
+            ul{
+                li{
+                    height: 40px;
+                    width: 170px;
+                    border-top: 1px solid black;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                }
+            }
+        }
+        .sub-history-text-box{
+            width: 50vw;
+            h3{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
