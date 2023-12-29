@@ -96,12 +96,13 @@ body {
             >div {
                 >figure {
                     >img {
+                        border: 1px solid #ddd;
                         width: 100%;
                     }
 
                     >figcaption {
                         text-align: center;
-                        padding-top: 15px;
+                        padding-top: 30px;
                         margin-bottom: 100px;
                     }
                 }
@@ -249,6 +250,8 @@ body {
         }
 
         .seoul_design {
+            width: 100%;
+            margin-bottom: 100px;
             .line {
                 margin-bottom: 10px;
                 width: 100%;
@@ -258,7 +261,7 @@ body {
             >p {
                 display: flex;
                 justify-content: flex-end;
-                padding-bottom: 65px;
+                padding-bottom: 80px;
             }
 
             .seoul_box {
@@ -292,86 +295,41 @@ body {
                         width: 100%;
                         display: flex;
                         flex-direction: row;
+                        flex-wrap: wrap;
                         justify-content: space-between;
                         align-items: center;
-                        margin: 70px auto;
+                        margin-top: 70px;
 
-                        .green01 {
+                        .color01 {
+                            display: flex;
                             width: 45%;
-                            .green02::before {
+                            margin-bottom:60px;
+                            &::before {
                                 content: '';
                                 display: inline-block;
                                 width: 83px;
                                 height: 83px;
                                 border-radius: 100px;
+                                margin-right: 20px;
+                                flex-shrink: 0;
+                            }
+                            &:nth-of-type(1)::before{
                                 background-color: #00D778;
-                                margin-right: 20px;
                             }
-
-                            .green02 {
-                                display: flex;
-                                flex-direction: row;
-                                justify-content: space-between;
-                                align-items: center;
-
-                                >div {
-                                    width: 75%;
-                                    >p {
-                                        margin-bottom: 20px;
-                                    }
-
-                                    >div {
-                                        display: flex;
-                                        flex-direction: row;
-                                        justify-content: space-between;
-                                        align-items: start;
-
-                                        .green-a {
-                                            display: flex;
-                                            flex-direction: column;
-                                            justify-content: space-between;
-                                            align-items: start;
-                                            >span{
-                                                color: #555;
-                                                font-weight: 300;
-                                            }
-                                        }
-
-                                        .green-b {
-                                            display: flex;
-                                            flex-direction: column;
-                                            justify-content: space-between;
-                                            align-items: start;
-                                            >span{
-                                                color: #555;
-                                                font-weight: 300;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                        .blue01 {
-                            width: 45%;
-                            .blue02::before {
-                                content: '';
-                                display: inline-block;
-                                width: 83px;
-                                height: 83px;
-                                border-radius: 100px;
+                            &:nth-of-type(2)::before{
                                 background-color: #0082FF;
-                                margin-right: 20px;
+                            }
+                            &:nth-of-type(3)::before{
+                                background-color: #FF0A73;
+                            }
+                            &:nth-of-type(4)::before{
+                                background-color: #FABF13;
                             }
 
-                            .blue02 {
-                                display: flex;
-                                flex-direction: row;
-                                justify-content: space-between;
-                                align-items: center;
+                            .color02 {
+                                width:100%;
 
                                 >div {
-                                    width: 75%;
                                     >p {
                                         margin-bottom: 20px;
                                     }
@@ -382,7 +340,7 @@ body {
                                         justify-content: space-between;
                                         align-items: start;
 
-                                        .blue-a {
+                                        .color-a {
                                             display: flex;
                                             flex-direction: column;
                                             justify-content: space-between;
@@ -390,178 +348,136 @@ body {
                                             >span{
                                                 color: #555;
                                                 font-weight: 300;
+                                                font-size:.8rem;
                                             }
                                         }
+
                                         
-                                        .blue-b {
-                                            display: flex;
-                                            flex-direction: column;
-                                            justify-content: space-between;
-                                            align-items: start;
-                                            >span{
-                                                color: #555;
-                                                font-weight: 300;
-                                            }
-                                        }
                                     }
                                 }
                             }
                         }
-                    }
-                    
-                    .color_col {
-                        .pink01 {
-                            width: 45%;
-                            .pink02::before {
-                                content: '';
-                                display: inline-block;
-                                width: 83px;
-                                height: 83px;
-                                border-radius: 100px;
-                                background-color: #FF0A73;
-                                margin-right: 20px;
-                            }
-                            
-                            .pink02 {
-                                display: flex;
-                                flex-direction: row;
-                                justify-content: space-between;
-                                align-items: center;
-                                >div{
-                                    width: 75%;
-                                    >p {
-                                        margin-bottom: 20px;
-                                    }
-                                    
-                                    >div {
-                                        display: flex;
-                                        flex-direction: row;
-                                        justify-content: space-between;
-                                        align-items: start;
-                                        
-                                        .pink-a {
-                                            display: flex;
-                                            flex-direction: column;
-                                            justify-content: space-between;
-                                            align-items: start;
-                                            >span{
-                                                color: #555;
-                                                font-weight: 300;
-                                            }
-                                        }
-
-                                        .pink-b {
-                                            display: flex;
-                                            flex-direction: column;
-                                            justify-content: space-between;
-                                            align-items: start;
-                                            >span{
-                                                color: #555;
-                                                font-weight: 300;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                        .yellow01 {
-                            width: 45%;
-                            .yellow02::before {
-                                content: '';
-                                display: inline-block;
-                                width: 83px;
-                                height: 83px;
-                                border-radius: 100px;
-                                background-color: #FABF13;
-                                margin-right: 20px;
-                            }
-                            
-                            .yellow02 {
-                                display: flex;
-                                flex-direction: row;
-                                justify-content: space-between;
-                                align-items: center;
-                                >div{
-                                    width: 75%;
-                                    >p {
-                                        margin-bottom: 20px;
-                                    }
-                                    
-                                    >div {
-                                        display: flex;
-                                        flex-direction: row;
-                                        justify-content: space-between;
-                                        align-items: start;
-                                        
-                                        .yellow-a {
-                                            display: flex;
-                                            flex-direction: column;
-                                            justify-content: space-between;
-                                            align-items: start;
-                                            >span{
-                                                color: #555;
-                                                font-weight: 300;
-                                            }
-                                        }
-                                        
-                                        .yellow-b {
-                                            display: flex;
-                                            flex-direction: column;
-                                            justify-content: space-between;
-                                            align-items: start;
-                                            >span{
-                                                color: #555;
-                                                font-weight: 300;
-                                            }
-                                        }
-                                    }
-                            }
-                        }
-                    }
                     }
                 }
 
                 .seoul_text {
                     >p {
                         text-align: center;
-                        margin: 30px auto;
+                        margin: 20px auto;
                     }
                 }
             }
         }
 
         .pictogram {
+            margin-bottom: 150px;
             .line {
                 margin-bottom: 10px;
                 width: 100%;
                 border: 1px solid #d9d9d9;
             }
 
-            p {
+            >p {
                 display: flex;
                 justify-content: flex-end;
                 padding-bottom: 65px;
             }
 
             .pictoall {
+                
                 .pictobox {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: stretch;
+                    margin: 15px auto;
                     .friend {
-                        >img {}
+                        border: 1px solid #ddd;
+                        background-color: white;
+                        width: 55%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 35px 55px;
+                        >img {
+                            padding-right: 30px;
+                        }
 
                         >figcaption {
-                            p:nth-child(1) {}
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-end;
+                            align-items: flex-start;
+                            >p:nth-child(1) {}
 
-                            p:nth-child(2) {}
+                            >p:nth-child(3) {
+                                font-size: 0.9rem;
+                            }
                         }
                     }
 
                     .trait {
-                        >img {}
+                        width: 45%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 35px 55px;
+                        
+                        >img {
+                            padding-right: 30px;
+                        }
 
-                        >figcaption {}
+                        >figcaption {
+                            display: flex;
+                            font-size: 0.9rem;
+                        }
+                    }
+                    &:nth-of-type(1){
+                        background-color: #FAE4ED;
+                    }
+                    &:nth-of-type(2){
+                        background-color: #F1ECE0;
+                    }
+                    &:nth-of-type(3){
+                        background-color: #E4ECF3;
                     }
                 }
+            }
+        }
+        .whole-symb{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            .symb{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 200px;
+                >figure{
+                    width: 50%;
+                    >img{
+                        width: 100%;
+                    }
+                }
+                >article{
+                    width: 50%;
+                    padding: 50px;
+                    >p:nth-child(1){
+                        padding-bottom: 20px;
+                        font-size: 1.5rem;
+                    }
+                    >p:nth-child(2){}
+                }
+            }
+            .symb:nth-of-type(2){
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: center;
             }
         }
     }
