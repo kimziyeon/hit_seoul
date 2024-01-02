@@ -1,0 +1,72 @@
+[
+    {
+        "'id" : 0,
+        "number" : "SC0908",
+        "name" : "단청빨간색",
+        "color" : "background-color:#98212B",
+        "img" : "color1.jpg"
+    },
+    {
+        "'id" : 1,
+        "number" : "SCN902",
+        "name" : "한강은백색",
+        "color" : "background-color:#E4DFE3",
+        "img" : "color2.jpg"
+    },
+    {
+        "'id" : 2,
+        "number" : "SC1956",
+        "name" : "꽃담황토색",
+        "color" : "background-color:#C1641F",
+        "img" : "color3.jpg"
+    },
+    {
+        "'id" : 3,
+        "number" : "SC7909",
+        "name" : "서울하늘색",
+        "color" : "background-color:#5676A5",
+        "img" : "color4.jpg"
+    },
+    {
+        "'id" : 4,
+        "number" : "SC4907",
+        "name" : "남산초록색",
+        "color" : "background-color:#2D5044",
+        "img" : "color5.jpg"
+    },
+    {
+        "'id" : 5,
+        "number" : "SC0916",
+        "name" : "고궁갈색",
+        "color" : "background-color:#563935",
+        "img" : "color6.jpg"
+    },
+    {
+        "'id" : 6,
+        "number" : "SC2940",
+        "name" : "기와진회색",
+        "color" : "background-color:#47423E",
+        "img" : "color7.jpg"
+    },
+    {
+        "'id" : 7,
+        "number" : "SC2920",
+        "name" : "돌담회색",
+        "color" : "background-color:#9E978D",
+        "img" : "color8.jpg"
+    },
+    {
+        "'id" : 8,
+        "number" : "SC1944",
+        "name" : "은행노란색",
+        "color" : "background-color:#EBA955",
+        "img" : "color9.jpg"
+    },
+    {
+        "'id" : 9,
+        "number" : "SC1941",
+        "name" : "삼베연미색",
+        "color" : "background-color:#DBC5A0",
+        "img" : "color10.jpg"
+    }
+]
