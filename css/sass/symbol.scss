@@ -7,6 +7,11 @@ main{
     margin: 0 auto;
 }
 
+
+
+
+//slogan
+
 .slogan_01{
     display: flex;
     justify-content: space-between;
@@ -100,6 +105,14 @@ main{
                     span{}
                 }
             }
+            .pink_txt.active{
+                color:white;
+                background-color: #E9537C;
+            }
+            .blue_txt.active{
+                color:white;
+                background-color: #007A9F;
+            }
         }
         
         p{
@@ -110,23 +123,14 @@ main{
                 background-color: #007A9F;
             }
 
-        
-        p:hover{
-            background-color: #ffffff;
-            border: 1px solid #d9d9d9;
-
-        }
 
         .pink{
             > p{
             background-color: #E9537C;
             }
-        
-            > p:hover{
-            background-color: #ffffff;
-            border: 1px solid #d9d9d9;
-            }
         }
+
+        
 
         
     }
@@ -182,6 +186,7 @@ main{
                     }
                     > span{display: block;}
                 }
+
             }
 
             p{
@@ -208,6 +213,41 @@ main{
                     color: #0083CD;
                 }
             }
+
+
+            .yellow_txt.active{
+                color: white;
+                background-color: #FABE00;
+                > span{
+                    color: white;
+                }
+            }
+
+            .white_txt.active{
+                color: white;
+                background-color: #d9d9d9;
+                > span{
+                    color: white;
+                }
+            }
+
+            .orange_txt.active{
+                color: white;
+                background-color: #DC620E;
+                > span{
+                    color: white;
+                }
+            }
+
+            .sky_txt.active{
+                color: white;
+                background-color: #0083CD;
+                > span{
+                    color: white;
+                }
+            }
+
+
         }
         .white{
             p{
@@ -260,17 +300,34 @@ main{
 
 
 
+
+//color
+
+
 .color_01{
-    div{
+    > div{
         display: flex;
         justify-content: space-between;
         text-align: center;
         gap: 20px;
         figure{
-            img{
-                width: 100%;
-                border: 5px solid #ffffff;
+            > div{
+                border: 3px solid #fff;
+                overflow: hidden;
+                p{
+                    img{
+                    width: 100%;
+                    height: 450px;
+                    object-fit: cover;
+                    transition: 1s;
+                }
+                    img:hover{
+                        transform: scale(1.6);
+                    }
+
+                }
             }
+
             figcaption{
                 margin-top: 25px;
                 b{
@@ -311,17 +368,26 @@ main{
     .color10_js{
         display: flex;
         justify-content: space-between;
-        gap: 10px;
+        flex-wrap: wrap;
         padding-top: 100px;
         figure{
+            width: 19%;
             border: 1px solid #d9d9d9;
-            img{width: 100%;}
-            > p{
+            margin-bottom: 15px;
+            p:nth-of-type(1){
+                img{
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                }
+            }
+            p:nth-of-type(2){
                 background: #d9d9d9;
                 height: 30px;
             }
             figcaption{
                 text-align: right;
+                padding: 10px;
                 > p{}
                 span{}
             }
@@ -340,12 +406,23 @@ main{
         padding-bottom: 100px;
     }
     .color50_js{
-        span{
-            padding: 5px 20px;
-            color: #111;
-            background-color: #E0dfdd;
-            font-weight:200;
+        div{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 5px;
+            span{
+                display: block;
+                width: 9.5%;
+                padding: 5px 0;
+                color: #111;
+                background-color: #E0dfdd;
+                font-weight: 300;
+                text-align: center;
+            }
         }
+
     }
 }
 
@@ -366,6 +443,14 @@ main{
 
 
 
+
+
+
+
+//font
+
+
+
 .font_namsan, .font_hanriver{
     h4{
         font-size: 1.5rem;
@@ -379,16 +464,12 @@ main{
         border-left: 1px solid #d9d9d9;
         padding: 20px 0 0 30px;
         margin-left: 90px;
-        p{
-            margin-bottom: 50px;
-            padding-bottom: 50px;
-            border-bottom: 1px solid #d9d9d9;
-            img{width: 100%;}
-        }
-        p:nth-of-type(3){
-            border-bottom: 1px solid #fff;
-            padding-bottom: 0;
-            margin-bottom: 100px;
+        table{
+            tr{
+                td{
+                    border: 1px solid #d9d9d9;
+                }
+            }
         }
     }
 
@@ -410,11 +491,11 @@ main{
     width: 100%;
     border: 1px solid #111;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 50px 0;
     a{
         border-right: 1px solid #111;
-        padding: 10px 150px;
+        padding: 10px 130px;
         margin: 15px 0;
         font-weight: 700;
     }
