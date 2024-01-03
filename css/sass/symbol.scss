@@ -430,7 +430,7 @@ main{
 
 .color_04, .color_05{
     border-top: 1px solid #d9d9d9;
-    margin: 180px 0 180px ;
+    margin: 180px 0;
     padding-top: 5px;
     p{
         text-align: right;
@@ -465,15 +465,161 @@ main{
         padding: 20px 0 0 30px;
         margin-left: 90px;
         table{
+            border-collapse: collapse;
+            border-top: 1px solid #d9d9d9;
             tr{
-                td{
-                    border: 1px solid #d9d9d9;
+                border-bottom: 1px solid #d9d9d9;
+                th{
+                    padding: 10px 0;
+                    background-color: rgb(217, 217, 217,0.5);
                 }
+                td{
+                    padding: 20px 40px;
+                    text-align: center;
+                }
+                .font_wei{
+                    border-right: 1px solid #d9d9d9;
+                    background-color: rgb(217, 217, 217,0.5);
+                }
+                td:nth-of-type(2){
+                    border-right: 1px solid #d9d9d9;
+                }
+                th:nth-of-type(2){
+                    border-right: 1px solid #d9d9d9;
+                    border-left: 1px solid #d9d9d9;
+                }
+            }
+        }
+
+        .font_namsan2{
+            position: relative;
+            > p{
+                padding: 50px 0;
+                margin: 50px 0 40px;
+                border-top: 1px solid #d9d9d9;
+                img{width: 100%;}
+            }
+            > div{
+                position: absolute;
+                right: 13%;
+                bottom: 9%;
+                span:nth-of-type(odd){
+                    color: rgb(39, 165, 255);
+                }
+            }
+        }
+
+        .font_namsan3{
+            position: relative;
+            > div{
+                padding: 100px 0 50px;
+                margin: 60px 0;
+                border-top: 1px solid #d9d9d9;
+                img{width: 100%;}
+            }
+            p, span{
+                position: absolute;
+                text-align: center;
+            }
+            p{
+                background-color: rgb(204, 204, 204);
+                z-index: -1;
+            }
+
+            span:nth-of-type(1){
+                top:11%;
+                left: 3%;
+            }
+            span:nth-of-type(2){
+                top:96%;
+                left:17%;
+            }
+            span:nth-of-type(3){
+                top:11%;
+                left:40%;
+            }
+            span:nth-of-type(4){
+                top:12%;
+                left:70%;
+            }
+            span:nth-of-type(5){
+                top:95%;
+                left:80%;
+            }
+
+
+            p:nth-of-type(1){
+                top:28%;
+                left: 2%;
+                width: 8%;
+                height: 20%;
+            }
+            p:nth-of-type(2){
+                top:23%;
+                left: 22%;
+                width: 16%;
+                height: 70%;
+            }
+            p:nth-of-type(3){
+                top:67%;
+                left: 58%;
+                width: 7%;
+                height: 18%;
+            }
+            p:nth-of-type(4){
+                top:25%;
+                left: 82%;
+                width: 10%;
+                height: 20%;
+            }
+            p:nth-of-type(5){
+                top:77%;
+                left: 75%;
+                width: 27%;
+                height: 10%;
+            }
+        }
+
+
+        .font_namsan4{
+            > div{
+                border-top: 1px solid #d9d9d9;
+                padding: 50px 0;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        
+    }
+}
+
+
+
+.font_hanriver{
+    margin-top: 60px;
+    .font_hanriver2{
+        position: relative;
+        p{
+            padding: 50px 0;
+            margin: 50px 0 40px;
+            border-top: 1px solid #d9d9d9;
+            img{width: 100%;}
+        }
+        div{
+            position: absolute;
+            right: 13%;
+            bottom: 7%;
+            span:nth-of-type(odd){
+                color: rgb(39, 165, 255);
             }
         }
     }
 
+    .
 }
+
+
 
 
 .font_01{
@@ -503,6 +649,7 @@ main{
         border-right: 1px solid #fff;
     }
 }
+
 
 .font_03{
     border-top: 1px solid #d9d9d9;

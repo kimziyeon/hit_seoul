@@ -2,41 +2,7 @@
 
 function init(){
 
-    const mainColorHov = document.querySelectorAll('.pink_txt, .blue_txt'),
-        mainColorBar = document.querySelectorAll('.slogan_color p'),
-
-        wideColorHov = document.querySelectorAll('.yellow_txt, .white_txt, .orange_txt, .sky_txt'),
-        wideColorBar = document.querySelectorAll('.wide_color p');
-
-    console.log(mainColorHov)
-    console.log(mainColorBar)
-
-    console.log(wideColorHov)
-    console.log(wideColorBar)
-
-
-    
-    mainColorBar.forEach(function(el,key){
-        el.onmouseover = function(){
-            mainColorHov[key].classList.add('active');
-        }
-        el.onmouseleave = function(){
-            mainColorHov[key].classList.remove('active');
-        }
-    })
-
-
-    
-    wideColorBar.forEach(function(el,key){
-        el.onmouseover = function(){
-            wideColorHov[key].classList.add('active');
-        }
-        el.onmouseleave = function(){
-            wideColorHov[key].classList.remove('active');
-        }
-    })
-
-
+    function pageColor(){
 
 
 
@@ -115,6 +81,66 @@ function init(){
         elColor50.innerHTML = tag2;
     }
 
+
+
+    };
+
+    function pageFont(){
+
+    };
+
+    function pageSlogan(){
+
+        const mainColorHov = document.querySelectorAll('.pink_txt, .blue_txt'),
+        mainColorBar = document.querySelectorAll('.slogan_color p'),
+
+        wideColorHov = document.querySelectorAll('.yellow_txt, .white_txt, .orange_txt, .sky_txt'),
+        wideColorBar = document.querySelectorAll('.wide_color p');
+
+    console.log(mainColorHov)
+    console.log(mainColorBar)
+
+    console.log(wideColorHov)
+    console.log(wideColorBar)
+
+
+    
+    mainColorBar.forEach(function(el,key){
+        el.onmouseover = function(){
+            mainColorHov[key].classList.add('active');
+        }
+        el.onmouseleave = function(){
+            mainColorHov[key].classList.remove('active');
+        }
+    })
+
+
+    
+    wideColorBar.forEach(function(el,key){
+        el.onmouseover = function(){
+            wideColorHov[key].classList.add('active');
+        }
+        el.onmouseleave = function(){
+            wideColorHov[key].classList.remove('active');
+        }
+    })
+
+
+
+    };
+
+    let pageNum = location.pathname.substr(1);
+
+            switch(pageNum){
+                case 'sym-color.html' : pageColor();
+                break;
+
+                case 'sym-font.html' : pageFont();
+                break;
+
+                case 'sym-slogan.html' : pageSlogan();
+                break;
+            };
 
 
 }
