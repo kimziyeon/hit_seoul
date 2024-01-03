@@ -3,6 +3,8 @@
 
 $mobile : 480px;
 $tablet : 768px;
+body{height:5000px;}
+main{position:fixed; left:0; top:0; width:100%;}
 
 @mixin res($n){
     @media (max-width:$n) {
@@ -35,6 +37,9 @@ header{
                 a{
                     color: #ffffff;
                     padding: 0 3vw;
+                    &:hover{
+                        color: #0181c9;
+                    }
                 }
             }
         }
@@ -72,9 +77,12 @@ header{
     }
 }
 .sct2{
-    width: 100%; height: 100%;
+    width: 100%; height: 100vh;
     position: relative;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
     h2{
         color: #ffffff;
         position: absolute;
@@ -82,21 +90,22 @@ header{
         text-align: center;
         font-weight: bold;
         top: 40%; left: 33%;
+        z-index: 99;
     }
-    .sct2-img-box{
-        display: flex;
-        // position: relative;
-        overflow: hidden;
-        margin: 252px 0;    
-        div{
-            width: 580px; height: 580px;
-            margin-right: 1rem;
-            flex-shrink: 0;
-            img{
-                width: 100%; height: 100%;
+    .swiper {
+        .swiper-wrapper{
+            
+            .swiper-slide{
+                // height: 53.7vh;
+                // line-height: 53.7vh;
+                text-align: center;
+                margin: 0 10px;
+                img{
+                    width: 100%; height: 100%;
+                }
             }
         }
-    }
+      }
 }
 
 .sct3{
@@ -104,6 +113,14 @@ header{
     background-size: cover;
     width: 100%; height: 100vh;
     position: relative;
+    overflow: hidden;
+    // .sct3-background-img{
+    //     // width: 100%; height: 100vh;
+    //     position: absolute;
+    //     top: 0; bottom: 0;
+    //     // right: -200%; left: -200%;
+    //     img{width: 100%; height: 100%; display: block;}
+    // }
     h2{
         position: absolute;
         color: #ffffff;
@@ -124,10 +141,18 @@ header{
         width: 80%; height: 80%;
         margin: 0 auto;
         margin-top: 10vw;
-        p{
-            font-weight: bold;
-            color: #f1f1f1;
-            text-align: justify;
+        // p{
+        //     font-weight: bold;
+        //     color: #f1f1f1;
+        //     text-align: justify;
+        // }
+        .blank{
+            .text-wrpper{
+                #text{
+                    font-weight: bold;
+                    color: #f1f1f1;
+                }
+            }
         }
         h3{
             font-weight: bold;

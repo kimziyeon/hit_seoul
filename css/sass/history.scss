@@ -3,6 +3,7 @@
 
 $laptop : 1100px;
 
+
 .mayor-line{
     border: 1px solid #d9d9d9;
     height: 100%;
@@ -11,9 +12,17 @@ $laptop : 1100px;
     left: 50%; top: 9%;
     transform: translateX(-50%);
 }
+.active{
+    background-color: #d9d9d9;
+    color: white;
+    &::before{
+        content: "<";
+        margin-right: 5px;
+    }
+}
 
 main{
-    width: 60%;
+    // width: 60%;
     margin: 0 auto;
     .his-sub-sct1{
         .sub-sct1-bundle{
@@ -157,7 +166,7 @@ main{
 
     .mayor-sct{
         // width: 50%;
-        margin: 20px 0;
+        margin: 50px 0;
         display: flex;
         flex-direction: row-reverse;
         &:nth-child(odd){
@@ -177,7 +186,7 @@ main{
             justify-content: flex-end;
             border-bottom: 1px solid #d9d9d9;
             padding-bottom: 21px;
-            width: 45%;
+            // width: 45%;
             @include res($laptop){
                 flex-direction: column-reverse;
             }
