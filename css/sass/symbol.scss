@@ -2,9 +2,34 @@
 @import "_common.scss";
 
 
+.fontbanner{
+    background: url("../img/symbol/menu_3.jpg") 0 0 / cover no-repeat;
+};
+
+.colorbanner{
+    background: url("../img/symbol/menu_2.jpg") 0 0 / cover no-repeat;
+};
+
+.sloganbanner{
+    background: url("../img/symbol/menu_1.jpg") 0 0 / cover no-repeat;
+};
+
+
+.intro-wrap{
+    h2{
+        width: 10%;
+        img{width: 100%;}
+    }
+}
+
+
+
 main{
     width: 60%;
     margin: 0 auto;
+    @include res($tablet){
+        width: 90%;
+    }
 }
 
 
@@ -16,23 +41,49 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    @include res($tablet){
+        display: block;
+    }
 
     .left_01{
         width:50%;
+        @include res($tablet){
+            width:100%;
+        }
         p{
             display: flex;
             padding-bottom: 5px;
+            @include res($tablet){
+                display: none;
+            }
+        
+            
             b{
                 padding-right: 5px;
-            }
-            span{
-                font-weight: 500;
             }
         }
     }
 
+    .left_01_768{
+        display: none;
+        @include res($tablet){
+            display: block;
+            padding-bottom: 20px;
+            b{
+                font-size: 1.5rem;
+                display: block;
+                padding: 10px 0;
+            }
+            p{}
+        }
+
+    }
+
     .right_01{
         width:50%;
+        @include res($tablet){
+            width:100%;
+        }
         > div{
             position: relative;
             text-align: center;
@@ -44,6 +95,7 @@ main{
                 width: 100%;
                 height: 100%;
                 opacity: 0;
+                transition: 0.3s;
 
                 display: flex;
                 align-items: center;
@@ -85,18 +137,27 @@ main{
         justify-content: center;
         padding-top: 100px;
         gap:30px;
+        @include res($tablet){
+            display: block;
+        }
 
         .pink, .blue{
             display: flex;
             flex-direction: column;
             align-items: center;
-
             .pink_txt, .blue_txt{
                 border: 1px solid #d9d9d9;
                 border-radius: 10px;
                 display: flex;
                 justify-content: space-between;
                 padding: 40px;
+                @include res($tablet){
+                    margin: 10px;
+                    background-color: #007A9F;
+                    color: #fff;
+                    width: 80%;
+                    padding: 0;
+                }
                 div{
                     display: flex;
                     flex-direction: column;
@@ -105,6 +166,7 @@ main{
                     span{}
                 }
             }
+
             .pink_txt.active{
                 color:white;
                 background-color: #E9537C;
@@ -112,6 +174,14 @@ main{
             .blue_txt.active{
                 color:white;
                 background-color: #007A9F;
+            }
+
+
+            .pink_txt{
+                @include res($tablet){
+                background-color: #E9537C;
+                color: #fff;
+                }
             }
         }
         
@@ -121,12 +191,18 @@ main{
                 margin-top: 30px;
                 border-radius: 30px;
                 background-color: #007A9F;
+                @include res($tablet){
+                    display: none;
+                }
             }
 
 
         .pink{
             > p{
             background-color: #E9537C;
+            @include res($tablet){
+                display: none;
+            }
             }
         }
 
@@ -165,19 +241,34 @@ main{
         display: flex;
         justify-content: space-between;
         width: 100%;
+        @include res($tablet){
+            display: block;
+        }
 
         .yellow, .white, .orange, .sky{
             text-align: center;
             width: 24%;
+            @include res($tablet){
+                width: 90%;
+                margin: 10px auto;
+            }
 
             .yellow_txt, .white_txt, .orange_txt, .sky_txt{
                 border: 1px solid #d9d9d9;
                 padding: 50px 0;
+                @include res($tablet){
+                    padding: 20px 0;
+                    border-radius: 20px;
+                    background-color: #FABE00;
+                }
 
                 > span{
                     display: block;
                     margin-bottom: 20px;
                     color: #FABE00;
+                    @include res($tablet){
+                        color: #fff;
+                    }
                 }
                 div{
                     > b{
@@ -189,6 +280,15 @@ main{
 
             }
 
+
+            .white_txt{
+                @include res($tablet){
+                background-color: #d9d9d9;
+                }
+            }
+
+            
+
             p{
                 height: 15px;
                 width: 15%;
@@ -196,21 +296,42 @@ main{
                 border-radius: 30px;
                 background-color: #FABE00;
                 margin: 20px auto;
+                @include res($tablet){
+                    display: none;
+                }
             }
 
             .white_txt{
+                @include res($tablet){
+                    background-color: #fff;
+                    }
                 > span{
                     color: #d9d9d9;
+                    @include res($tablet){
+                        color: #111;
+                    }
                 }
             }
             .orange_txt{
+                @include res($tablet){
+                    background-color: #DC620E;
+                    }
                 > span{
                     color:#DC620E;
+                    @include res($tablet){
+                        color: #fff;
+                    }
                 }
             }
             .sky_txt{
+                @include res($tablet){
+                    background-color: #0083CD;
+                    }
                 > span{
                     color: #0083CD;
+                    @include res($tablet){
+                        color: #fff;
+                    }
                 }
             }
 
@@ -253,16 +374,25 @@ main{
             p{
                 background-color: #ffffff;
                 border: 1px solid #d9d9d9;
+                @include res($tablet){
+                    display: none;
+                }
             }
         }
         .orange{
             p{
                 background-color: #DC620E;
+                @include res($tablet){
+                    display: none;
+                }
             }
         }
         .sky{
             p{
                 background-color: #0083CD;
+                @include res($tablet){
+                    display: none;
+                }
             }
         }
 
@@ -284,9 +414,15 @@ main{
     div{
         display: flex;
         justify-content: space-between;
-
+        @include res($mobile){
+            display: block;
+        }
         figure{
             width: 24%;
+            @include res($mobile){
+                width: 90%;
+                margin: 0 auto;
+            }
             img{width: 100%;}
             figcaption{
                 color: #ccc;
@@ -385,6 +521,12 @@ main{
                 background: #d9d9d9;
                 height: 30px;
             }
+
+            p:nth-of-type(2):hover{
+                transform: scaleY(100%);
+            }
+
+
             figcaption{
                 text-align: right;
                 padding: 10px;
@@ -528,16 +670,16 @@ main{
             }
 
             span:nth-of-type(1){
-                top:10%;
+                top:8%;
                 left: 3%;
             }
             span:nth-of-type(2){
                 top:97%;
-                left:17%;
+                left:19%;
             }
             span:nth-of-type(3){
-                top:10%;
-                left:40%;
+                top:99%;
+                left:52%;
             }
             span:nth-of-type(4){
                 top:12%;
@@ -619,85 +761,84 @@ main{
     .font_hanriver3{
         position: relative;
         > div{
-            padding: 150px 0 50px;
+            padding: 80px 0 50px;
             margin: 20px 0 40px;
             border-top: 1px solid #d9d9d9;
             img{width: 100%;}
         }
         p,span{
             position: absolute;
+            text-align: center;
         }
         p{
             background-color: rgb(204, 204, 204);
             z-index: -1;
         }
-        span{
-            border-left: 1px double #d9d9d9;
-            padding-left: 10px;
-        }
+
 
 
 
         p:nth-of-type(1){
             width: 8%;
             height: 20%;
-            top: 35%;
-            left: 14%;
+            top: 20%;
+            left: 12%;
         }
         p:nth-of-type(2){
             width: 8%;
             height: 17%;
-            top: 75%;
-            left: 14%;
+            top: 70%;
+            left: 12%;
         }
         p:nth-of-type(3){
             width: 15%;
-            height: 10%;
-            top: 82%;
-            left: 45%;
+            height: 15%;
+            top: 73%;
+            left: 44%;
         }
         p:nth-of-type(4){
             width: 8%;
             height: 17%;
-            top: 50%;
-            left: 45%;
+            top: 35%;
+            left: 43%;
         }
         p:nth-of-type(5){
             width: 13%;
             height: 24%;
-            top: 40%;
+            top: 23%;
             right: 3%;
         }
         p:nth-of-type(6){
             width: 8%;
             height: 10%;
-            top: 68%;
+            top: 60%;
             right: 13%;
         }
 
 
+
         span:nth-of-type(1){
-            top:20%;
-            left: 10%;
+            top:5%;
+            left: 21%;
         }
         span:nth-of-type(2){
-            top:98%;
+            top:93%;
             left: 10%;
         }
         span:nth-of-type(3){
-            top:23%;
-            left: 40%;
+            top:5%;
+            left: 43%;
         }
         span:nth-of-type(4){
-            top:98%;
+            top:93%;
             left: 40%;
         }
         span:nth-of-type(5){
-            top:93%;
-            left: 77%;
+            top:85%;
+            left: 78%;
         }
         span:nth-of-type(6){
-            top:20%;
+            top:8%;
             left: 75%;
         }
 
