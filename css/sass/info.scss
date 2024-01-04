@@ -1,6 +1,10 @@
 // info.scss
 @import "_common.scss";
 
+*{
+    box-sizing:border-box
+};
+
 body {
     width: 100%;
     
@@ -10,6 +14,10 @@ body {
 
     >main {
         width: 60%;
+
+        @include res($tablet){
+            width: 90%;
+        };
 
         >section {
             margin-top: 20%;
@@ -39,8 +47,12 @@ body {
                         >.cont-num{
                             width: 20%;
         
-                            font-size: 1.5rem;
                             color: #0079BC;
+                            font-size: 1.5rem;
+
+                            @include res($mobile){
+                                font-size: 1rem;
+                            };
                         }
         
                         >.cont-cont{
@@ -49,16 +61,28 @@ body {
         
                             >b{
                                 font-size: 1.5rem;
+
+                                @include res($mobile){
+                                    font-size: 1rem;
+                                };
                             }
     
                             >p{
                                 margin-top: 36px;
                                 font-size: 1rem;
+
+                                @include res($mobile){
+                                    font-size: 0.9rem;
+                                };
                             }
                         }
                         >.cont-date{
                             width: 20%;
                             font-size: 1rem;
+
+                            @include res($mobile){
+                                font-size: 0.9rem;
+                            };
                         }
                     }
                 }
@@ -80,3 +104,180 @@ body {
         }
     }
 }
+
+/////////////////////storyInSeoul/////////////////////
+
+.grid {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+};
+
+.grid-item {
+    width: 47%;
+    height: auto;
+    float: left;
+    
+    padding: 0% 0%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    >a{
+
+        >div{
+        padding:0 5%;
+        &.top-img{padding-top:5%;}
+        &.sub-text{padding-bottom:5%;}
+        };
+    };
+    
+    &:hover {
+        background-color: #eeeeee;
+    };
+
+    &.grid-item:nth-of-type(2){
+        // transform: translateY(25%);
+        margin-top: 12.5%;
+    };
+
+    @include res($tablet){
+        width: 100%;
+
+        &.grid-item:nth-of-type(2){
+            // transform: translateY(0%);
+            margin-top: 0%;
+        };
+    };
+};
+
+.top-img {
+    margin-bottom: 5%;
+    img{
+        width: 100%;
+    }
+};
+.sns-btn {
+    text-align: right;
+    margin-bottom: 5%;
+    span {
+        margin-left: 1%;
+    }
+};
+
+.title-text {
+    margin-bottom: 4%;
+
+    >p{
+        font-size: 1rem;
+        font-weight: bold;
+        color: #999999;
+    };
+
+    >b{
+        font-size: 1.5rem;
+    };
+};
+
+.sub-text {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #D9D9D9;
+
+    >span{
+        text-align: left;
+        font-size: 1rem;
+    };
+
+    >b{
+        padding-top: 4%;
+        font-weight: normal;
+        text-align: right;
+    };
+};
+
+/////////////////////static/////////////////////
+
+.static-con {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    margin: 0 auto;
+
+    @include res($tablet){
+        flex-direction: column;
+        height: 100vw;
+    };
+
+    .static-link{
+        position: relative;
+        height: 100vw;
+        max-height: 650px;
+        
+        margin: 0 auto;
+        transition: 1.5s;
+        flex-grow: 1;
+        border: white solid 1px;
+
+        @include res($tablet){
+            flex-grow: 1;
+            width: 100%;
+            height: 20%;
+        };
+
+        &:hover{
+            flex-grow: 10;
+
+            @include res($tablet){
+                flex-grow: 1;
+            };
+        };
+
+        &:hover p {
+            opacity: 1;
+            color: white;
+        };
+
+        &:nth-of-type(1){
+            background: url("../img/info/info_1.jpg") 0 0 / cover no-repeat;
+        };
+
+        &:nth-of-type(2){
+            background: url("../img/info/info_2.jpg") 0 0 / cover no-repeat;
+        };
+
+        &:nth-of-type(3){
+            background: url("../img/info/info_3.jpg") 0 0 / cover no-repeat;
+        };
+
+        &:nth-of-type(4){
+            background: url("../img/info/info_4.jpg") 0 0 / cover no-repeat;
+        };
+
+        &:nth-of-type(5){
+            background: url("../img/info/info_5.jpg") 0 0 / cover no-repeat;
+        };
+
+        p{  
+                position: absolute;
+                opacity: 0;
+                top: 50%;
+                left: 50%;
+                transition: .5s 0.3s;
+
+                font-size: 3.5rem;
+                font-weight: bold;
+                transform: translate(-50%, -50%);
+                
+                color: rgba(0,0,0,0);
+                white-space: nowrap;
+
+                @include res($tablet){
+                    transition: 0.5s;
+                    font-size: 3rem;
+                };
+        };
+    };
+};
