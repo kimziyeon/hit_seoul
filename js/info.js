@@ -15,7 +15,7 @@ function goFaceBook(msg,url){
 
 
 
-window.onload = function(){
+window.addEventListener('load',function(){
     
     function pageGraphy (){
 
@@ -178,8 +178,6 @@ window.onload = function(){
             let max = jsonObj2.length;
             let num = 0;
 
-            console.log(max);
-
             function printData2 (n=0) {
                 let tag4 = "";
 
@@ -233,7 +231,6 @@ window.onload = function(){
                         
                     printData2(num);
                     num++;
-                    console.log(num);
 
                     };
 
@@ -266,4 +263,5 @@ window.onload = function(){
         break;
     };
 
-};
+
+});
