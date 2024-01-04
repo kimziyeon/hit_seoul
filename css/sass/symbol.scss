@@ -465,6 +465,7 @@ main{
         padding: 20px 0 0 30px;
         margin-left: 90px;
         table{
+            width: 100%;
             border-collapse: collapse;
             border-top: 1px solid #d9d9d9;
             tr{
@@ -527,15 +528,15 @@ main{
             }
 
             span:nth-of-type(1){
-                top:11%;
+                top:10%;
                 left: 3%;
             }
             span:nth-of-type(2){
-                top:96%;
+                top:97%;
                 left:17%;
             }
             span:nth-of-type(3){
-                top:11%;
+                top:10%;
                 left:40%;
             }
             span:nth-of-type(4){
@@ -573,7 +574,7 @@ main{
                 height: 20%;
             }
             p:nth-of-type(5){
-                top:77%;
+                top:79%;
                 left: 75%;
                 width: 27%;
                 height: 10%;
@@ -615,8 +616,101 @@ main{
             }
         }
     }
+    .font_hanriver3{
+        position: relative;
+        > div{
+            padding: 150px 0 50px;
+            margin: 20px 0 40px;
+            border-top: 1px solid #d9d9d9;
+            img{width: 100%;}
+        }
+        p,span{
+            position: absolute;
+        }
+        p{
+            background-color: rgb(204, 204, 204);
+            z-index: -1;
+        }
+        span{
+            border-left: 1px double #d9d9d9;
+            padding-left: 10px;
+        }
 
-    .
+
+
+        p:nth-of-type(1){
+            width: 8%;
+            height: 20%;
+            top: 35%;
+            left: 14%;
+        }
+        p:nth-of-type(2){
+            width: 8%;
+            height: 17%;
+            top: 75%;
+            left: 14%;
+        }
+        p:nth-of-type(3){
+            width: 15%;
+            height: 10%;
+            top: 82%;
+            left: 45%;
+        }
+        p:nth-of-type(4){
+            width: 8%;
+            height: 17%;
+            top: 50%;
+            left: 45%;
+        }
+        p:nth-of-type(5){
+            width: 13%;
+            height: 24%;
+            top: 40%;
+            right: 3%;
+        }
+        p:nth-of-type(6){
+            width: 8%;
+            height: 10%;
+            top: 68%;
+            right: 13%;
+        }
+
+
+        span:nth-of-type(1){
+            top:20%;
+            left: 10%;
+        }
+        span:nth-of-type(2){
+            top:98%;
+            left: 10%;
+        }
+        span:nth-of-type(3){
+            top:23%;
+            left: 40%;
+        }
+        span:nth-of-type(4){
+            top:98%;
+            left: 40%;
+        }
+        span:nth-of-type(5){
+            top:93%;
+            left: 77%;
+        }
+        span:nth-of-type(6){
+            top:20%;
+            left: 75%;
+        }
+
+    }
+
+    .font_hanriver4{
+        > div{
+            border-top: 1px solid #d9d9d9;
+            padding: 50px 0;
+            img{width: 100%;}
+        }
+    }
+    
 }
 
 
@@ -639,9 +733,11 @@ main{
     display: flex;
     justify-content: space-evenly;
     margin: 50px 0;
+    vertical-align: middle;
     a{
+        width: 100%;
         border-right: 1px solid #111;
-        padding: 10px 130px;
+        padding: 10px 60px;
         margin: 15px 0;
         font-weight: 700;
     }
