@@ -47,8 +47,12 @@ body {
                         >.cont-num{
                             width: 20%;
         
-                            font-size: 1.5rem;
                             color: #0079BC;
+                            font-size: 1.5rem;
+
+                            @include res($mobile){
+                                font-size: 1rem;
+                            };
                         }
         
                         >.cont-cont{
@@ -57,16 +61,28 @@ body {
         
                             >b{
                                 font-size: 1.5rem;
+
+                                @include res($mobile){
+                                    font-size: 1rem;
+                                };
                             }
     
                             >p{
                                 margin-top: 36px;
                                 font-size: 1rem;
+
+                                @include res($mobile){
+                                    font-size: 0.9rem;
+                                };
                             }
                         }
                         >.cont-date{
                             width: 20%;
                             font-size: 1rem;
+
+                            @include res($mobile){
+                                font-size: 0.9rem;
+                            };
                         }
                     }
                 }
@@ -178,5 +194,90 @@ body {
         padding-top: 4%;
         font-weight: normal;
         text-align: right;
+    };
+};
+
+/////////////////////static/////////////////////
+
+.static-con {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    margin: 0 auto;
+
+    @include res($tablet){
+        flex-direction: column;
+        height: 100vw;
+    };
+
+    .static-link{
+        position: relative;
+        height: 100vw;
+        max-height: 650px;
+        
+        margin: 0 auto;
+        transition: 1.5s;
+        flex-grow: 1;
+        border: white solid 1px;
+
+        @include res($tablet){
+            flex-grow: 1;
+            width: 100%;
+            height: 20%;
+        };
+
+        &:hover{
+            flex-grow: 10;
+
+            @include res($tablet){
+                flex-grow: 1;
+            };
+        };
+
+        &:hover p {
+            opacity: 1;
+            color: white;
+        };
+
+        &:nth-of-type(1){
+            background: url("../img/info/info_1.jpg") 0 0 / cover no-repeat;
+        };
+
+        &:nth-of-type(2){
+            background: url("../img/info/info_2.jpg") 0 0 / cover no-repeat;
+        };
+
+        &:nth-of-type(3){
+            background: url("../img/info/info_3.jpg") 0 0 / cover no-repeat;
+        };
+
+        &:nth-of-type(4){
+            background: url("../img/info/info_4.jpg") 0 0 / cover no-repeat;
+        };
+
+        &:nth-of-type(5){
+            background: url("../img/info/info_5.jpg") 0 0 / cover no-repeat;
+        };
+
+        p{  
+                position: absolute;
+                opacity: 0;
+                top: 50%;
+                left: 50%;
+                transition: .5s 0.3s;
+
+                font-size: 3.5rem;
+                font-weight: bold;
+                transform: translate(-50%, -50%);
+                
+                color: rgba(0,0,0,0);
+                white-space: nowrap;
+
+                @include res($tablet){
+                    transition: 0.5s;
+                    font-size: 3rem;
+                };
+        };
     };
 };
