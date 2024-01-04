@@ -1,3 +1,13 @@
+@import "reset.css";
+
+$mobile : 480px;
+$tablet : 768px; 
+
+@mixin res($n){
+    @media (max-width:$n) {
+        @content;
+    }
+};
 
 body{
     // height: 10000px;
@@ -24,6 +34,9 @@ header{
             width: 60%;
             margin: 0 auto;
             height: 88px;
+            @include res($mobile){
+                width: 90%;
+            }
             
             .top-wrap{
                 display: flex;
@@ -33,10 +46,16 @@ header{
                 width: calc(60% - 20px);
                 max-width: 1536px;
                 height: 88px;
+                @include res($mobile){
+                    display: none;
+                }
                 h1{
                     img{
                         width: 43px;
                     }
+                }
+                .search{
+                    
                 }
             }
             .nav-wrap{
@@ -46,6 +65,9 @@ header{
                 overflow: hidden;
                 z-index: 2;
                 height: 100%;
+                @include res($mobile){
+                    // justify-content: flex-end;
+                }
                 nav{
                     .list{
                         display: flex;
@@ -55,6 +77,9 @@ header{
                             color: #f1f1f1;
                             display: flex;
                             justify-content: center;
+                            @include res($mobile){
+                                padding: 0 8vw;
+                            }
                             .menu-title{
                                 display: flex;
                                 align-items: center;
@@ -93,20 +118,36 @@ header{
 }
 
 .banner-img{
-    // border: 1px solid black;
+    // border: 1px solid black;\
+    position: relative;
     width: 100%; height: 26.7vh;
     padding-top: 88px;
-    background: url(../../img/history/page3/history_3.jpg) center;
-    background-size: cover;
-    display: flex; align-items: flex-end;
+    display: flex; align-items: end;
+
+    &::before{
+        position: absolute;
+        content: "";
+        bottom: 0px; left: 0px;
+        width: 100%; height: 100%;
+        background-color: rgba(153,153,153,0.5);
+    }
     div{
+        position: relative;
+        bottom: 0px; left: 0px;
         width: 60%;
         margin: 0 auto;
         p{
+            position: relative;
+            bottom: 0px; right: 0px;
             color: #fff;
             font-size: 2rem;
             text-align: end;
             margin-bottom: 45px;
+            z-index: 1;
+
+            @include res($tablet){
+                display: none;
+            };
         }
     }
 }
@@ -119,6 +160,11 @@ aside{
     bottom: 40px; right: 40px;
     opacity: 0;
     transition: all ease 0.5s;
+
+    @include res($tablet){
+        width: 44px; height: 44px;
+    };
+
     &:hover{
         background-color: black;
         img{
@@ -140,6 +186,11 @@ aside{
 section{
     width: 60%;
     margin: 0 auto;
+
+    @include res($tablet){
+        width: 90%;
+    };
+
     .intro-wrap{
         display: flex;
         justify-content: space-around;
@@ -147,9 +198,19 @@ section{
         border-top: 1px solid black;
         border-bottom: 1px solid black;
         padding: 44px 0; 
-        margin: 197px 0 167px 0;
+        margin: 16% 0 18% 0;
+
+        @include res($tablet){
+            padding: 16px 0;
+        };
+
         h2{
             font-size: 1.5rem;
+
+            @include res($tablet){
+                font-size: 1rem;
+            };
+
         }
         .intro-line {
             border: 1px solid #d9d9d9;
@@ -157,6 +218,9 @@ section{
         }
         .intro-text-box{
             width: 40vw;
+            @include res($tablet){
+                font-size: 0.8rem;
+            };
         }
     }
 }
@@ -166,6 +230,9 @@ footer{
     margin: 0 auto;
     // position: relative;
     // transform: translateY(100%);
+    @include res($tablet){
+        width: 90%;
+    }
     .ft-wrap{
         display: flex;
         flex-direction: column;
@@ -179,6 +246,14 @@ footer{
             a{
                 img{
                     width: 139px;
+
+                    @include res($tablet){
+                        width: 90px;
+                    };
+
+                    @include res($mobile){
+                        width: 75px;
+                    };
                 }
             }
             >div{
@@ -187,10 +262,20 @@ footer{
                 .ft-nav{
                     a{
                         margin-right: 1.4vw;
+
+                        @include res($tablet){
+                            font-size: 0.8rem;
+                        };
+
                     }
                 }
                 .sns-wrap{
                     display: flex;
+
+                    @include res($tablet){
+                        display: none;
+                    };
+
                     li{
                         margin: 0 0.5vw;
                         a{
@@ -213,6 +298,14 @@ footer{
                     p{
                         text-align: end;
                         color: #999999;
+
+                        @include res($tablet){
+                            font-size: 0.8rem;
+                        };
+                        
+                        @include res($mobile){
+                            font-size: 0.7rem;
+                        };
                     }
                 }
             }

@@ -1,40 +1,57 @@
 window.onload = function () {
-    var swiper = new Swiper(".mySwiper", {
-        watchSlidesProgress: true,
-        slidesPerView: 3,
-    });
 
-    window.addEventListener('scroll', function () {
-        // console.log(window.scrollY);
+    // window.addEventListener('scroll', function () {
+    //     console.log('hi');
 
-    });
+    // });
+    
+    $('#fullpage').fullpage({		      
+        anchors: ['sct1', 'sct2', 'sct3','sct4','sct5'],
+        scrollingSpeed: 1000
+    });           
 
-    //header 메뉴 색상 변경
-    const hdMenu = document.querySelectorAll('.container'),
-          main = document.querySelector('main'),
-        hdMenuA = document.querySelectorAll('.header-menu-item a');
 
-    let inter,num=0;
-    window.onscroll = function(){
-        
-        if(hdMenu[0].getBoundingClientRect().top < 0){
-            // hdMenuA.classList.add('active');
-        }else{
-            // hdMenuA.classList.remove('active');
-        }
-        // hdMenu.forEach(function(menu,key){
-        //     if(menu.getBoundingClientRect().top < window.innerHeight* 0.5){
-        //         menu.classList.add('active')
-        //     }
-        // })
+    function runAction(direction) {
+        console.log(direction+' 실행 !!!!');
+      }
+      
+      var currentDirection = ''; // 현재의 방향을 나타내는 변수
+      var lastScrollTop = 0; // 방향을 구하기 위해 사용되는 변수
+      let i = 0;
+    //   const sectionS = document.querySelectorAll('.container');
+    //   let setTime;
+    //   $(window).scroll(function(event){
+    //     clearTimeout(setTime);
+    //         setTime = setTimeout(function () {
+                
+    //     var currentPos = $(this).scrollTop();
+    //      sectionS.forEach(function(sct,key){
+    //         //여기서 down한번에 한개씩
+    //         if (currentPos > lastScrollTop){
+    //             // 아래로 스크롤 중
+    //             if(currentDirection != 'down') { // 마지막 방향 확인
+    //             //  currentDirection = 'down';
+    //              runAction('down');
+    //             }
+                
+    //         } else {
+    //            // 위로 스크롤 중
+    //            if(currentDirection != 'up') { // 마지막 방향 확인
+    //             //  currentDirection = 'up';
+    //              runAction('up');
+    //            }
+    //         }
+    //       })
+    //      lastScrollTop = currentPos;
+    //     }, 200); // 방향을 구하기 위해 마지막 스크롤 지점을 저장
+    //   });
 
-        clearTimeout(inter)
-        inter = setTimeout(()=>{
-            num++;
-            // main.style=`position:fixed;width:100%;transform:translateY(-${window.innerHeight * num}px);transition:1s`;
-        },300)
-        
-    }
+
+
+
+
+
+
 
     const scrlTop = document.getElementById('topBtn');
 
