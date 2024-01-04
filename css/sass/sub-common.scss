@@ -1,14 +1,19 @@
-@import "reset.css";
+
+body{
+    // height: 10000px;
+}
 header{
     width: 100%;
     margin: 0 auto;
     position: fixed;
+    left:0; top:0;
     // position: relative;
     // transform: translateY(-100%);
     background-color: #f1f1f1;
     overflow: hidden;
     height:88px;
     transition: all ease 0.5s;
+    z-index: 99;
     &:hover{
         height: 300px;
     }
@@ -57,9 +62,9 @@ header{
                                 height: 60px;
                                 z-index: 99;
                                 font-weight: bold;
+                                transition: 0.2s;
                                 &:hover{
                                     color: #0181c9;
-                                    &::after{content: 'º';}
                                 }
                             }
                             .sub-menu{
@@ -141,7 +146,8 @@ section{
         align-items: center;
         border-top: 1px solid black;
         border-bottom: 1px solid black;
-        padding: 44px 0; margin: 197px 0 167px 0;
+        padding: 44px 0; 
+        margin: 197px 0 167px 0;
         h2{
             font-size: 1.5rem;
         }
