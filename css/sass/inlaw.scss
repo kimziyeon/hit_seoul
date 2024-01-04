@@ -2,24 +2,14 @@
 @import "_common.scss";
 
 body {
-    @media (max-width:1350px) {
-        font-size: 14px;
-    }
-
-    @media (max-width:1000px) {
-        font-size: 12px;
-    }
-    
-    @media (max-width:480px) {
-        font-size: 10px;
-    }
-    
     main {
         width: 60%;
         margin: auto;
+
         @media (max-width:768px) {
             width: 90%;
         }
+
         .history {
             margin: 157px auto;
             width: 100%;
@@ -41,30 +31,13 @@ body {
                 @media (max-width:1000px) {
                     width: 100%;
                     padding-right: 0;
-                    margin-top: 30px;
-                }
-
-                @media (max-width:480px) {
-                    width: 60%;
+                    margin-top: 8%;
                 }
 
                 .human-city {
-                    font-size: 24px;
+                    font-size: 1.3vw;
                     font-weight: bold;
                     padding-bottom: 20px;
-
-                    @media (max-width:1350px) {
-                        font-size: 22px;
-                    }
-
-                    @media (max-width:1000px) {
-                        font-size: 18px;
-                        text-align: center;
-                    }
-
-                    @media (max-width:480px) {
-                        font-size: 16px;
-                    }
                 }
 
                 >div {
@@ -78,6 +51,11 @@ body {
 
                     >p {
                         padding-bottom: 20px;
+                        font-size: 0.8vw;
+
+                        @media (max-width:1000px) {
+                            font-size: 1.2vw;
+                        }
                     }
                 }
             }
@@ -114,6 +92,11 @@ body {
                         top: 0;
                         left: 0;
                         text-align: center;
+                        font-size: 1vw;
+
+                        @media (max-width:1000px) {
+                            font-size: 1.8vw;
+                        }
 
                         p:nth-child(1) {
                             color: white;
@@ -135,6 +118,7 @@ body {
 
         .logo {
             margin-bottom: 100px;
+            width: 100%;
 
             .line {
                 margin-bottom: 10px;
@@ -146,6 +130,7 @@ body {
                 display: flex;
                 justify-content: flex-end;
                 padding-bottom: 65px;
+                font-size: 0.8vw;
             }
 
             >div {
@@ -157,17 +142,8 @@ body {
 
                     >figcaption {
                         text-align: center;
-                        padding-top: 30px;
-
-                        @media (max-width:1030px) {
-                            word-break: keep-all;
-                            width: 70%;
-                            margin: 0 auto;
-                        }
-
-                        @media (max-width:480px) {
-                            width: 60%;
-                        }
+                        padding-top: 5%;
+                        font-size: 1vw;
                     }
                 }
             }
@@ -186,6 +162,7 @@ body {
                 display: flex;
                 justify-content: flex-end;
                 padding-bottom: 65px;
+                font-size: 0.8vw;
             }
 
             .outer-box {
@@ -205,19 +182,7 @@ body {
                     padding: 35px 20px;
                     text-align: center;
                     transition: 0.5s;
-
-                    @media (max-width:1722px) {
-                        width: 32%;
-                    }
-
-                    @media (max-width:1448px) {
-                        padding: 20px 10px;
-                    }
-
-                    @media (max-width:1208px) {
-                        width: 33%;
-                        padding: 10px 5px;
-                    }
+                    font-size: 0.8vw;
 
                     @media (max-width:1035px) {
                         flex-direction: column;
@@ -349,50 +314,21 @@ body {
                 width: 30%;
                 word-break: keep-all;
 
-                @media (max-width:1350px) {
-                    width: 32%;
-                }
-
-                @media (max-width:768px) {
-                    width: 30%;
-                }
-
-                @media (max-width:526px) {
-                    width: 33%;
-                }
-
-                @media (max-width:480px) {
-                    width: 30%;
-                }
-
                 >b {
                     font-weight: 500;
                     display: inline-block;
-                    font-size: 1.25rem;
-                    margin: 30px auto;
+                    font-size: 1vw;
+                    margin: 10% auto;
+                }
 
-                    @media (max-width:1350px) {
-                        font-size: 18px;
-                    }
-
-                    @media (max-width:1000px) {
-                        font-size: 16px;
-                        margin: 20px auto;
-                    }
-
-                    @media (max-width:1000px) {
-                        font-size: 16px;
-                    }
-
-                    @media (max-width:526px) {
-                        font-size: 14px;
-                    }
+                >p {
+                    font-size: 0.8vw;
                 }
             }
 
             .line02 {
                 border-left: 1px solid #d9d9d9;
-                height: 242px;
+                height: 13vw;
             }
         }
 
@@ -502,6 +438,7 @@ body {
                                 >div {
                                     >p {
                                         margin-bottom: 20px;
+                                        font-size: 0.9vw;
                                     }
 
                                     >div {
@@ -520,19 +457,7 @@ body {
                                             >span {
                                                 color: #555;
                                                 font-weight: 300;
-                                                font-size: 12px;
-
-                                                @media (max-width:1350px) {
-                                                    font-size: 10px;
-                                                }
-
-                                                @media (max-width:1000px) {
-                                                    font-size: 8px;
-                                                }
-
-                                                @media (max-width:480px) {
-                                                    font-size: 6px;
-                                                }
+                                                font-size: 0.6vw;
                                             }
                                         }
                                     }
@@ -546,12 +471,14 @@ body {
                     >p {
                         text-align: center;
                         margin: 20px auto;
+                        font-size: 0.9vw;
                     }
                 }
             }
         }
 
         .pictogram {
+            width: 100%;
             margin-bottom: 150px;
 
             .line {
@@ -589,36 +516,16 @@ body {
 
                         >img {
                             padding-right: 30px;
-
-                            @media (max-width:1350px) {
-                                width: 30%;
-                                padding-right: 20px;
-                            }
-
-                            @media (max-width:480px) {
-                                padding-right: 10px;
-                            }
+                            width: 25%;
                         }
 
                         >figcaption {
+                            p:nth-child(1) {
+                                font-size: 0.8vw;
+                            }
+
                             p:nth-child(3) {
-                                font-size: 14px;
-
-                                @media (max-width:1600px) {
-                                    font-size: 12px;
-                                }
-
-                                @media (max-width:1350px) {
-                                    font-size: 11px;
-                                }
-
-                                @media (max-width:1000px) {
-                                    font-size: 10px;
-                                }
-
-                                @media (max-width:768px) {
-                                    font-size: 8px;
-                                }
+                                font-size: 0.8vw;
                             }
                         }
                     }
@@ -639,33 +546,11 @@ body {
 
                         >img {
                             padding-right: 30px;
-
-                            @media (max-width:1350px) {
-                                width: 25%;
-                                padding-right: 20px;
-                            }
-
-                            @media (max-width:480px) {
-                                padding-right: 10px;
-                            }
+                            width: 25%;
                         }
 
                         >figcaption {
-                            @media (max-width:1600px) {
-                                font-size: 12px;
-                            }
-
-                            @media (max-width:1350px) {
-                                font-size: 11px;
-                            }
-
-                            @media (max-width:1000px) {
-                                font-size: 10px;
-                            }
-
-                            @media (max-width:768px) {
-                                font-size: 8px;
-                            }
+                            font-size: .9vw;
                         }
                     }
 
@@ -697,6 +582,7 @@ body {
                 position: absolute;
                 top: 0;
                 left: 50%;
+
                 @media (max-width:768px) {
                     border: 0.5px solid #d9d9d9;
                 }
@@ -718,10 +604,11 @@ body {
                         width: 100%;
                     }
                 }
-                
+
                 .circ {
                     width: 45%;
-                    position:relative;
+                    position: relative;
+
                     &::before {
                         content: '';
                         display: inline-block;
@@ -731,7 +618,7 @@ body {
                         border-radius: 100%;
                         position: absolute;
                         top: 8px;
-                        left: -13.3%;
+                        left: -15%;
                         @media (max-width:768px) {
                             left: -12.5%;
                         }
@@ -739,56 +626,28 @@ body {
                             left: -12%;
                         }
                     }
-                    
-
                     .tit {
                         padding-bottom: 20px;
-                        font-size: 1.5rem;
-
-                        @media (max-width:1350px) {
-                            font-size: 22px;
-                        }
-
-                        @media (max-width:1000px) {
-                            font-size: 20px;
-                        }
-
-                        @media (max-width:768px) {
-                            font-size: 18px;
-                        }
-
-                        @media (max-width:480px) {
-                            font-size: 16px;
-                        }
+                        font-size: 1.1vw;
                     }
-
                     .content {
-                        @media (max-width:550px) {
-                            font-size: 10px;
-                        }
-
-                        @media (max-width:480px) {
-                            font-size: 8px;
-                        }
+                        font-size: 0.8vw;
                     }
                 }
             }
-
             .symb:nth-of-type(3) {
                 flex-direction: row-reverse;
                 text-align: right;
                 ::before {
-                    left:109%;
+                    left: 108%;
                     @media (max-width:768px) {
                         left: 109.7%;
                     }
                 }
             }
-
-            .symb:nth-of-type(4){
+            .symb:nth-of-type(4) {
                 margin-bottom: 0;
             }
         }
-
     }
 }
