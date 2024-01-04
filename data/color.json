@@ -1,0 +1,388 @@
+{
+"colorBest10" : [
+    {
+        "'id" : 0,
+        "number" : "SC0908",
+        "name" : "단청빨간색",
+        "color" : "background-color:#98212B",
+        "img" : "color1.jpg"
+    },
+    {
+        "'id" : 1,
+        "number" : "SCN902",
+        "name" : "한강은백색",
+        "color" : "background-color:#E4DFE3",
+        "img" : "color2.jpg"
+    },
+    {
+        "'id" : 2,
+        "number" : "SC1956",
+        "name" : "꽃담황토색",
+        "color" : "background-color:#C1641F",
+        "img" : "color3.jpg"
+    },
+    {
+        "'id" : 3,
+        "number" : "SC7909",
+        "name" : "서울하늘색",
+        "color" : "background-color:#5676A5",
+        "img" : "color4.jpg"
+    },
+    {
+        "'id" : 4,
+        "number" : "SC4907",
+        "name" : "남산초록색",
+        "color" : "background-color:#2D5044",
+        "img" : "color5.jpg"
+    },
+    {
+        "'id" : 5,
+        "number" : "SC0916",
+        "name" : "고궁갈색",
+        "color" : "background-color:#563935",
+        "img" : "color6.jpg"
+    },
+    {
+        "'id" : 6,
+        "number" : "SC2940",
+        "name" : "기와진회색",
+        "color" : "background-color:#47423E",
+        "img" : "color7.jpg"
+    },
+    {
+        "'id" : 7,
+        "number" : "SC2920",
+        "name" : "돌담회색",
+        "color" : "background-color:#9E978D",
+        "img" : "color8.jpg"
+    },
+    {
+        "'id" : 8,
+        "number" : "SC1944",
+        "name" : "은행노란색",
+        "color" : "background-color:#EBA955",
+        "img" : "color9.jpg"
+    },
+    {
+        "'id" : 9,
+        "number" : "SC1941",
+        "name" : "삼베연미색",
+        "color" : "background-color:#DBC5A0",
+        "img" : "color10.png"
+    }
+],
+
+"colorBest50" :[
+    {
+        "id" : 0,
+        "number" : "SCN902",
+        "backColor" : "background-color:#E0DFDD",
+        "fontColor" : "color:#111"
+    },
+    {
+        "id" : 1,
+        "number" : "SC1942",
+        "backColor" : "background-color:#F1C49D",
+        "fontColor" : "color:#111"
+    },
+    {
+        "id" : 2,
+        "number" : "SC1950",
+        "backColor" : "background-color:#DC935",
+        "fontColor" : "color:#111"
+    },
+    {
+        "id" : 3,
+        "number" : "SC1920",
+        "backColor" : "background-color:#A68F7F",
+        "fontColor" : "color:#fff"
+    },
+    {
+        "id" : 4,
+        "number" : "SC1972",
+        "backColor" : "background-color:#744F22",
+        "fontColor" : "color:#fff"
+    },
+    {
+        "id" : 5,
+        "number" : "SC5903",
+        "backColor" : "background-color:#90BDBD",
+        "fontColor" : "color:#111"
+    },
+    {
+        "id" : 6,
+        "number" : "SC7909",
+        "backColor" : "background-color:#568BCF",
+        "fontColor" : "color:#fff"
+    },
+    {
+        "id" : 7,
+        "number" : "SC5905",
+        "backColor" : "background-color:#3C8282",
+        "fontColor" : "color:#fff"
+    },
+    {
+        "id" : 8,
+        "number" : "SC5907",
+        "backColor" : "background-color:#1B3232",
+        "fontColor" : "color:#fff"
+    },
+    {
+        "id" : 9,
+        "number" : "SC9905",
+        "backColor" : "background-color:#8F4350",
+        "fontColor" : "color:#fff"
+    },
+
+
+    {
+        "id" : 10,
+        "number" : "SC2901",
+        "backColor" : "background-color:#EDE4D6",
+        "fontColor" : "color:#111"
+    },
+    {
+        "id" : 11,
+        "number" : "SC1944",
+        "backColor" : "background-color:#F7B65B",
+        "fontColor" : "color:#111"
+    },
+    {
+        "id" : 12,
+        "number" : "SC2920",
+        "backColor" : "background-color:#A5A39A",
+        "fontColor" : "color:#111"
+    },
+    {
+        "id" : 13,
+        "number" : "SC1956",
+        "backColor" : "background-color:#D16F16",
+        "fontColor" : "color:#fff"
+    },
+    {
+        "id" : 14,
+        "number" : "SC2924",
+        "backColor" : "background-color:#61523F",
+        "fontColor" : "color:#fff"
+    },
+    {
+        "id" : 15,
+        "number" : "SC6902",
+        "backColor" : "background-color:#93B7C7",
+        "fontColor" : "color:#111"
+    },
+    {
+        "id" : 16,
+        "number" : "SC2914",
+        "backColor" : "background-color:#8E8238",
+        "fontColor" : "color:#fff"
+    },
+    {
+        "id" : 17,
+        "number" : "SC2916",
+        "backColor" : "background-color:#605F20",
+        "fontColor" : "color:#fff"
+    },
+    {
+        "id" : 18,
+        "number" : "SC4913",
+        "backColor" : "background-color:#252E2B",
+        "fontColor" : "color:#fff"
+    },
+    {
+        "id" : 19,
+        "number" : "SC0908",
+        "backColor" : "background-color:#AE1831",
+        "fontColor" : "color:#fff"
+    },
+
+
+    {
+        "id" : 20,
+        "number" : "SC1903",
+        "backColor" : "background-color:#E5D8D2",
+        "fontColor" : "color:#111"
+    },
+    {
+        "id" : 21,
+        "number" : "SC2902",
+        "backColor" : "background-color:#CEBA8D",
+        "fontColor" : "color:#111"
+    },
+    {
+        "id" : 22,
+        "number" : "SC1998",
+        "backColor" : "background-color:#FC7920",
+        "fontColor" : "color:#111"
+    },
+    {
+        "id" : 23,
+        "number" : "SC0917",
+        "backColor" : "background-color:#B77300",
+        "fontColor" : "color:#fff"
+    },
+    {
+        "id" : 24,
+        "number" : "SC2940",
+        "backColor" : "background-color:#504E4A",
+        "fontColor" : "color:#fff"
+    },
+    {
+        "id" : 25,
+        "number" : "SC7905",
+        "backColor" : "background-color:#8DB1E1",
+        "fontColor" : "color:#111"
+    },
+    {
+        "id" : 26,
+        "number" : "SC2931",
+        "backColor" : "background-color:#83826D",
+        "fontColor" : "color:#fff"
+    },
+    {
+        "id" : 27,
+        "number" : "SC4907",
+        "backColor" : "background-color:#355F54",
+        "fontColor" : "color:#fff"
+    },
+    {
+        "id" : 28,
+        "number" : "SC9903",
+        "backColor" : "background-color:#CD929B",
+        "fontColor" : "color:#fff"
+    },
+    {
+        "id" : 29,
+        "number" : "SC0913",
+        "backColor" : "background-color:#6E4446",
+        "fontColor" : "color:#fff"
+    },
+
+
+    {
+        "id" : 30,
+        "number" : "SC2905",
+        "backColor" : "background-color:#F7D100",
+        "fontColor" : "color:#111"
+    },
+    {
+        "id" : 31,
+        "number" : "SC1948",
+        "backColor" : "background-color:#DEA65B",
+        "fontColor" : "color:#111"
+    },
+    {
+        "id" : 32,
+        "number" : "SC1937",
+        "backColor" : "background-color:#BA917B",
+        "fontColor" : "color:#111"
+    },
+    {
+        "id" : 33,
+        "number" : "SC1969",
+        "backColor" : "background-color:#946B55",
+        "fontColor" : "color:#fff"
+    },
+    {
+        "id" : 34,
+        "number" : "SC7903",
+        "backColor" : "background-color:#B6CBE0",
+        "fontColor" : "color:#111"
+    },
+    {
+        "id" : 35,
+        "number" : "SC2913",
+        "backColor" : "background-color:#A4A503",
+        "fontColor" : "color:#fff"
+    },
+    {
+        "id" : 36,
+        "number" : "SC6910",
+        "backColor" : "background-color:#757A7D",
+        "fontColor" : "color:#fff"
+    },
+    {
+        "id" : 37,
+        "number" : "SC5906",
+        "backColor" : "background-color:#0A4243",
+        "fontColor" : "color:#fff"
+    },
+    {
+        "id" : 38,
+        "number" : "SC0902",
+        "backColor" : "background-color:#B48C8C",
+        "fontColor" : "color:#fff"
+    },
+    {
+        "id" : 39,
+        "number" : "SC0916",
+        "backColor" : "background-color:#5E4541",
+        "fontColor" : "color:#fff"
+    },
+
+
+
+    {
+        "id" : 40,
+        "number" : "SC1941",
+        "backColor" : "background-color:#DCCCAB",
+        "fontColor" : "color:#111"
+    },
+    {
+        "id" : 41,
+        "number" : "SC1949",
+        "backColor" : "background-color:#F29900",
+        "fontColor" : "color:#111"
+    },
+    {
+        "id" : 42,
+        "number" : "SC0905",
+        "backColor" : "background-color:#D48368",
+        "fontColor" : "color:#111"
+    },
+    {
+        "id" : 43,
+        "number" : "SC1939",
+        "backColor" : "background-color:#776851",
+        "fontColor" : "color:#fff"
+    },
+    {
+        "id" : 44,
+        "number" : "SC7914",
+        "backColor" : "background-color:#BEC3C7",
+        "fontColor" : "color:#111"
+    },
+    {
+        "id" : 45,
+        "number" : "SC6904",
+        "backColor" : "background-color:#589EBF",
+        "fontColor" : "color:#fff"
+    },
+    {
+        "id" : 46,
+        "number" : "SC7911",
+        "backColor" : "background-color:#0387BE",
+        "fontColor" : "color:#fff"
+    },
+    {
+        "id" : 47,
+        "number" : "SC6908",
+        "backColor" : "background-color:#12344A",
+        "fontColor" : "color:#fff"
+    },
+    {
+        "id" : 48,
+        "number" : "SC0907",
+        "backColor" : "background-color:#C14E4B",
+        "fontColor" : "color:#fff"
+    },
+    {
+        "id" : 49,
+        "number" : "SC9906",
+        "backColor" : "background-color:#551A3A",
+        "fontColor" : "color:#fff"
+    }
+
+]
+
+}

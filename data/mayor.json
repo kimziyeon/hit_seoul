@@ -1,14 +1,14 @@
 [
     {
         "id" : 0,
-        "img" : "img_mayor_osh.png",
+        "img" : "img_mayor_osh.gif",
         "name" : "제39대 서울시장 오세훈",
         "a" : "2022. 7. 1. ~",
         "policy" : ""
     },
     {
         "id" : 1,
-        "img" : "img_mayor_oh.png",
+        "img" : "img_mayor_oh.gif",
         "name" : "제38대 서울시장 오세훈",
         "a" : "2021. 4. 8. ~ 2022. 6. 30",
         "policy" : [
@@ -91,7 +91,7 @@
     {
         "id" : 9,
         "img" : "img_mayor4_2.png",
-        "name" : "제30대 서울시장 강덕기(직무대행)",
+        "name" : "제30대 서울시장 강덕기<br>(직무대행)",
         "a" : "1997. 9. 10. ~ 1998. 6. 30.",
         "policy" : ""
     },

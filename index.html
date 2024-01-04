@@ -7,12 +7,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>동행·매력 특별시 서울</title>
         <link rel="stylesheet" href="./css/index.min.css">
-        <script src="./js/common.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="./js/index.js"></script>
 
     </head>
 
     <body>
+        <aside id="topBtn"><img src="./img/menu/top-svgrepo-com.svg" alt=""></aside>
         <header>
             <div class="index-head-bundle">
                 <div class="header-menu-wrap">
@@ -23,37 +27,47 @@
                         <a href="./symbol.html">상징</a>
                         <a href="./inlaw.html">조례</a>
                         <div class="header-search">
-                            <input type="button" id="header-search-input" placeholder="search">
                             <button><img src="./img/menu/icon _search_.png" alt=""></button>
+                            <input type="text" id="header-search-input" placeholder="search">
                         </div>
                     </nav>
                     
                 </div>
             </div>
         </header>
-        <main>
-            <section class="sct1">
+        <main class="wrap">
+            <section class="sct1 container">
                 <div class="sct1-title-box">
                     <p>Seoul</p>
                     <p>My soul</p>
                 </div>
                 <div class="sct1-line"></div>
             </section>
-            <section class="sct2">
+            <section class="sct2 container">
                 <h2>역사와 문화가 살아 숨쉬고<br>과거와 미래가 공존하는</h2>
-                <div class="sct2-img-box">
-                    <div><img src="./img/index/index_1.jpg" alt=""></div>
-                    <div><img src="./img/index/index_2.jpg" alt=""></div>
-                    <div><img src="./img/index/index_3.jpg" alt=""></div>
-                    <div><img src="./img/index/index_1.jpg" alt=""></div>
-                    <div><img src="./img/index/index_2.jpg" alt=""></div>
-                </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./img/index/index_1.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/index/index_1.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/index/index_1.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/index/index_1.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/index/index_1.jpg" alt=""></div>
+                    </div>
+                  </div>
             </section>
-            <section class="sct3">   
+            <section class="sct3 container">
+                <!-- <div class="sct3-background-img">
+                    <img src="./img/index/index_5.jpg" alt="">
+                </div> -->
                 <h2>최첨단 IT도시,<br>사람과 함께 성장하는</h2>
             </section>
-            <section class="sct4">
+            <section class="sct4 container">
                 <div class="sct4-text-box">
+                    <div class="blank">
+                        <div class="text-wrpper">
+                            <div id="text"></div>
+                        </div>
+                    </div>
                     <p>광화문 청와대 종묘 한강 명동 롯데월드 연남동 서울전쟁기념관 동대문디자인플라자 개나리 서대문형무소역사관 익선동한옥거리 홍대 경복궁 까치 서울숲 인사동 종묘 해치 중앙국립박물관 이태원 북악산 올림픽공원 창덕궁 북촌한옥마을 은행나무 N서울타워 덕수궁돌담길 청계천 따릉이 대한민국 수도</p>
                     <div>
                         <h3 class="sct4-text-right">LOVE INSPIRE FUN</h3>
@@ -61,7 +75,7 @@
                     </div>
                 </div>
             </section>
-            <section class="sct5">
+            <section class="sct5 container">
                 <h2><b>서울</b>의<br>아름다움</h2>
                 <div class="sct5-line"></div>
             </section>
