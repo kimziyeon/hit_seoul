@@ -8,10 +8,16 @@
         <title>동행·매력 특별시 서울</title>
         <link rel="stylesheet" href="./css/index.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css" />
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
         <script src="./js/index.js"></script>
+
 
     </head>
 
@@ -35,15 +41,15 @@
                 </div>
             </div>
         </header>
-        <main class="wrap">
-            <section class="sct1 container">
+        <main class="wrap" id="fullpage">
+            <section class="sct1 container start section">
                 <div class="sct1-title-box">
                     <p>Seoul</p>
                     <p>My soul</p>
                 </div>
                 <div class="sct1-line"></div>
             </section>
-            <section class="sct2 container">
+            <section class="sct2 container section">
                 <h2>역사와 문화가 살아 숨쉬고<br>과거와 미래가 공존하는</h2>
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
@@ -55,13 +61,13 @@
                     </div>
                   </div>
             </section>
-            <section class="sct3 container">
+            <section class="sct3 container section">
                 <!-- <div class="sct3-background-img">
                     <img src="./img/index/index_5.jpg" alt="">
                 </div> -->
                 <h2>최첨단 IT도시,<br>사람과 함께 성장하는</h2>
             </section>
-            <section class="sct4 container">
+            <section class="sct4 container section">
                 <div class="sct4-text-box">
                     <div class="blank">
                         <div class="text-wrpper">
@@ -75,96 +81,98 @@
                     </div>
                 </div>
             </section>
-            <section class="sct5 container">
+            <section class="sct5 container section">
                 <h2><b>서울</b>의<br>아름다움</h2>
                 <div class="sct5-line"></div>
             </section>
+
+            <footer class="section">
+                <article class="footer-black-wrap ">
+                    <div class="footer-inner">
+                        <address>
+                            <ul class="address-item-bundle">
+                                <li class="address-item-menu">
+                                    <a href="" class="address-item-title">서울의 역사</a>
+                                    <div>
+                                        <ul>
+                                            <li><a href="">서울의 역사</a></li>
+                                            <li><a href="">역대 서울시장</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="address-item-menu">
+                                    <a href="" class="address-item-title">서울의 정보</a>
+                                    <div>
+                                        <ul>
+                                            <li><a href="">인포그래픽</a></li>
+                                            <li><a href="">스토리 인 서울</a></li>
+                                            <li><a href="">통계</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="address-item-menu">
+                                    <a href="" class="address-item-title">서울의 상징</a>
+                                    <div>
+                                        <ul>
+                                            <li><a href="">슬로건</a></li>
+                                            <li><a href="">색</a></li>
+                                            <li><a href="">서체</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="address-item-menu">
+                                    <a href="" class="address-item-title">서울의 조례</a>
+                                    <div>
+                                        <ul>
+                                            <li><a href="">휘장</a></li>
+                                            <li><a href="">브랜드</a></li>
+                                            <li><a href="">상징물</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </address>
+                        <div class="footer-s">
+                            <ul>
+                                <li><span><img src="./img/index/footer_icon_1.png" alt=""></span></li>
+                                <li><p>공공누리 제4유형(출처표시 + 상업적 이용금지 + 변경금지) 조건에 따라 자유롭게 이용이 가능합니다.</p></li>
+                                <li><p>담당부서</p><div class="footer-line"></div><p>디자인정책관 - 디자인정책담당관</p></li>
+                                <li><p>문 의</p><div class="footer-line"></div><p>02-2133-2194</p></li>
+                                <li><p>수정일</p><div class="footer-line"></div><p>2021-10-20</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article class="footer-white-wrap">
+                    <div class="footer-inner footer-white-line">
+                        <h2><img src="./img/index/footer_icon_2.png" alt=""></h2>
+                        <div class="footer-sub-menu">
+                            <nav>
+                                <a href="">저작권 정책</a>
+                                <a href="">누리집 지도</a>
+                                <a href="">누리집 바로가기</a>
+                                <a href="">누리집 도우미</a>
+                            </nav>
+                            <ul class="footer-white-wrap-icon-box">
+                                <li><img src="./img/menu/footer_youtube.png" alt=""></li>
+                                <li><img src="./img/menu/facebook.png" alt=""></li>
+                                <li><img src="./img/menu/footer_instagram.png" alt=""></li>
+                                <li><img src="./img/menu/footer_twitter.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-inner test">
+                        <ul class="footer-sub-address">
+                            <li>
+                                <p>서울특별시청 04524 서울특별시 중구 세종대로 110 대표전화: 02-120 또는 02-731-2120</p>
+                            </li>
+                            <li><p>© Seoul Metropolitan Government all rights reserved</p></li>
+                        </ul>
+                    </div>
+                </article>
+            </footer>
         </main>
-        <footer>
-            <article class="footer-black-wrap">
-                <div class="footer-inner">
-                    <address>
-                        <ul class="address-item-bundle">
-                            <li class="address-item-menu">
-                                <a href="" class="address-item-title">서울의 역사</a>
-                                <div>
-                                    <ul>
-                                        <li><a href="">서울의 역사</a></li>
-                                        <li><a href="">역대 서울시장</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="address-item-menu">
-                                <a href="" class="address-item-title">서울의 정보</a>
-                                <div>
-                                    <ul>
-                                        <li><a href="">인포그래픽</a></li>
-                                        <li><a href="">스토리 인 서울</a></li>
-                                        <li><a href="">통계</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="address-item-menu">
-                                <a href="" class="address-item-title">서울의 상징</a>
-                                <div>
-                                    <ul>
-                                        <li><a href="">슬로건</a></li>
-                                        <li><a href="">색</a></li>
-                                        <li><a href="">서체</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="address-item-menu">
-                                <a href="" class="address-item-title">서울의 조례</a>
-                                <div>
-                                    <ul>
-                                        <li><a href="">휘장</a></li>
-                                        <li><a href="">브랜드</a></li>
-                                        <li><a href="">상징물</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </address>
-                    <div class="footer-s">
-                        <ul>
-                            <li><span><img src="./img/index/footer_icon_1.png" alt=""></span></li>
-                            <li><p>공공누리 제4유형(출처표시 + 상업적 이용금지 + 변경금지) 조건에 따라 자유롭게 이용이 가능합니다.</p></li>
-                            <li><p>담당부서</p><div class="footer-line"></div><p>디자인정책관 - 디자인정책담당관</p></li>
-                            <li><p>문 의</p><div class="footer-line"></div><p>02-2133-2194</p></li>
-                            <li><p>수정일</p><div class="footer-line"></div><p>2021-10-20</p></li>
-                        </ul>
-                    </div>
-                </div>
-            </article>
-            <article class="footer-white-wrap">
-                <div class="footer-inner footer-white-line">
-                    <h2><img src="./img/index/footer_icon_2.png" alt=""></h2>
-                    <div class="footer-sub-menu">
-                        <nav>
-                            <a href="">저작권 정책</a>
-                            <a href="">누리집 지도</a>
-                            <a href="">누리집 바로가기</a>
-                            <a href="">누리집 도우미</a>
-                        </nav>
-                        <ul class="footer-white-wrap-icon-box">
-                            <li><img src="./img/menu/footer_youtube.png" alt=""></li>
-                            <li><img src="./img/menu/facebook.png" alt=""></li>
-                            <li><img src="./img/menu/footer_instagram.png" alt=""></li>
-                            <li><img src="./img/menu/footer_twitter.png" alt=""></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-inner test">
-                    <ul class="footer-sub-address">
-                        <li>
-                            <p>서울특별시청 04524 서울특별시 중구 세종대로 110 대표전화: 02-120 또는 02-731-2120</p>
-                        </li>
-                        <li><p>© Seoul Metropolitan Government all rights reserved</p></li>
-                    </ul>
-                </div>
-            </article>
-        </footer>
+        
     </body>
 
 </html>

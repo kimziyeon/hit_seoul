@@ -1,9 +1,13 @@
 // common.js
+let checkPage = location.pathname.substr(1);
+
 window.addEventListener('DOMContentLoaded',function(){
+    if(checkPage != "info-story.html"){
     let elHead = this.document.querySelector('head');
     let script = this.document.createElement('script');
     script.src = 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js';
-    elHead.prepend(script);
+    elHead.prepend(script);}
+
 })
 
 window.addEventListener('load',function(){
@@ -54,10 +58,10 @@ window.addEventListener('load',function(){
 
 
 
-    $('header').load('../../sub-common.html .inner',nav);
-    $('footer').load('../../sub-common.html .ft-wrap',nav);
-    $('.subcommon-container').load('../../sub-common.html .banner-img',nav);
-    $('aside').load('../../sub-common.html #topBtn img',nav);
+    $('header').load('./sub-common.html .inner',nav);
+    $('footer').load('./sub-common.html .ft-wrap',nav);
+    $('.subcommon-container').load('./sub-common.html .banner-img',nav);
+    $('aside').load('./sub-common.html #topBtn img',nav);
 
 
    
