@@ -149,37 +149,74 @@ window.onload = function () {
             break;
     };
 
-    $('body').prepend('<header></header>')
-    $('body').append('<footer></footer>')
-
-    let nav = function(){
-        
-    }
-
-    $('header').load('../../sub-common.html .inner',nav);
-    $('footer').load('../../sub-common.html .ft-wrap',nav);
-    $('.subcommon-container').load('../../sub-common.html .banner-img',nav);
+    
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // const scrlTop = document.getElementById('topBtn'),
+    // headerMenu = document.querySelector('header');
+
+    // window.addEventListener('scroll',function(){
+    //     if(this.scrollY < 10){
+    //         scrlTop.classList.remove('nohide');
+    //     }else{
+    //         scrlTop.classList.add('nohide');
+    //     }
+    // });
+
+    // let lastScroll = document.documentElement.scrollTop || 0
+    // document.addEventListener('scroll',function(){
+    //     let scrollTop = document.documentElement.scrollTop
+
+    //     if(scrollTop > lastScroll) {
+    //         // down
+    //         // console.log('down');
+    //         headerMenu.style = `transform: translateY(-100%)`
+    //     } else {
+    //         //up
+    //         // console.log('up');
+    //         headerMenu.style = `transform: translateY(0)`
+    //     }
+    //     lastScroll = scrollTop
+
+    // })
+
+
+    // scrlTop.onclick = function(){
+    //     window.scrollTo({
+    //         top:0,
+    //         left:0,
+    //         behavior:"smooth"
+    //     })
+    //     console.log('dsa');
+    // }
+    // console.log(scrollY);
+    
+    
+    // console.log('live');
 
 }
-//저게 1 2 첫번째 목록에서 이동하고 두번째는 3 4 세번째는 5 6 네번째는 7 8 그러면 두번째 목록부터 n+2로 하면
-// 1 2
-// 3 4
-// 5 6
-// 7 8
-
-
-//next랑 prev를 누르면 밑에 제목과 글 교체
-//그러면 next를 누르면 다음게 나오면 됨 대신 시대 갯수에 맞게 나와야함 고대는 3개 나머지는 2개 어캐?
-//next를 클릭하면 실행
-//옆에 목록 누르면 시대에 맞는 그거 나오고
-
-
-//    /his-seoul.html
-
 /*
 let pageName = location.pathname,
     pageIdx = pageName.indexOf('.'),

@@ -4,13 +4,40 @@
 $mobile : 480px;
 $tablet : 768px;
 body{height:5000px;}
-main{position:fixed; left:0; top:0; width:100%;}
+// main{position:fixed; left:0; top:0; width:100%;}
 
 @mixin res($n){
     @media (max-width:$n) {
         @content;
     }
 };
+
+aside{
+    position: fixed;
+    border-radius: 50%;
+    width: 53px; height: 53px;
+    background-color: #d9d9d9;
+    bottom: 40px; right: 40px;
+    opacity: 0;
+    transition: all ease 0.5s;
+    z-index: 99;
+    &:hover{
+        background-color: black;
+        img{
+                filter: invert(100%);
+        }
+    }
+    img{
+        width: 60%; height: 60%;
+        position: absolute;
+        top: 20%; left: 18%;
+        transition: all ease 0.5s;
+        
+    }
+}
+.nohide{
+    opacity: 1;
+}
 
 header{
         position: fixed;
@@ -39,6 +66,26 @@ header{
                     padding: 0 3vw;
                     &:hover{
                         color: #0181c9;
+                    }
+                }
+                .header-search{
+                    position: relative;
+                    border: 1px solid #ffffff;
+                    border-radius: 50px;
+                    height: 40px;
+                    padding: 0 5px;
+                    display: flex;
+                    #header-search-input{
+                        border: none;
+                        background-color:transparent;
+                        text-align: left;
+                        border:none;
+                        outline: none;
+                        color: #ffffff;
+                        // height: 30px;
+                    }
+                    button{
+                        
                     }
                 }
             }

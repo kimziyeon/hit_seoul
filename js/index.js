@@ -31,9 +31,29 @@ window.onload = function () {
         clearTimeout(inter)
         inter = setTimeout(()=>{
             num++;
-            main.style=`position:fixed;width:100%;transform:translateY(-${window.innerHeight * num}px);transition:1s`;
+            // main.style=`position:fixed;width:100%;transform:translateY(-${window.innerHeight * num}px);transition:1s`;
         },300)
         
+    }
+
+    const scrlTop = document.getElementById('topBtn');
+
+    window.addEventListener('scroll',function(){
+        if(this.scrollY < 10){
+            scrlTop.classList.remove('nohide');
+        }else{
+            scrlTop.classList.add('nohide');
+        }
+    });
+
+
+    scrlTop.onclick = function(){
+        window.scrollTo({
+            top:0,
+            left:0,
+            behavior:"smooth"
+        })
+        console.log('dsa');
     }
 
 }
