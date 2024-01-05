@@ -53,7 +53,7 @@ header{
             align-items: center;
             height: 8vw;
             h1{
-                img{
+                svg{
                     height: 57px; width: 53px;
                 }
             }
@@ -85,7 +85,11 @@ header{
                         // height: 30px;
                     }
                     button{
-                        
+                            svg{
+                                path{
+                                    fill: #ffffff;
+                                }                                
+                            }
                     }
                 }
             }
@@ -102,18 +106,27 @@ header{
     .sct1-title-box{
         position: absolute;
         left: 54%;
-        top: 35%;
+        top: 40%;
+        height: 20%;
         transform: translate(-50%,-50%);
         display: flex;
+        overflow: hidden;
         p{
             color: #ffffff;
             font-size: 5rem;
             font-weight: bold;
+            transition: all ease 1s;
             &:nth-child(2){
-                transform: translateY(40%);
                 font-weight: normal;
                 margin-left: 20px;
             }
+        }
+        .first{
+            transform: translateX(-100%);
+        }
+        .second{
+            padding-top: 65px;
+            transform: translateX(100%);
         }
     }
     .sct1-line{
@@ -139,14 +152,30 @@ header{
         top: 40%; left: 33%;
         z-index: 99;
     }
+    position: relative;
     .swiper {
+        position: relative;
         .swiper-wrapper{
-            
+            position: absolute;
+            display: flex;
+            &:nth-child(1){
+                animation: slider 8.5s linear infinite;
+            }
+            &:nth-child(2){
+                animation: slider 8.5s linear infinite;
+                left: 155.2%;
+                width: 100%;
+            }
+            @keyframes slider {
+                0% {transform: translate(0%)}
+                100%    {transform: translate(-155.2%)}
+            }
             .swiper-slide{
-                // height: 53.7vh;
-                // line-height: 53.7vh;
+                transform: translateY(-50%);
+                width: 30%;
                 text-align: center;
                 margin: 0 10px;
+                flex-shrink: 0;
                 img{
                     width: 100%; height: 100%;
                 }
@@ -156,11 +185,24 @@ header{
 }
 
 .sct3{
-    background-image: url(../img/index/index_5.jpg);
-    background-size: cover;
+    
     width: 100%; height: 100vh;
     position: relative;
     overflow: hidden;
+    .sct3-img-box{
+        background-image: url(../img/index/index_5.jpg);
+        background-size: cover;
+        position: absolute;
+        // bottom: 0; 
+        width: 100%; height: 100%;
+        transition: 1s;
+        transform: scaleY(100%) translateY(-100%);
+        border-radius: 0%;
+    }
+    .active{
+        transform: scaleY(100%) translateY(-50%);
+        border-radius: 0%;
+    }
     // .sct3-background-img{
     //     // width: 100%; height: 100vh;
     //     position: absolute;
@@ -187,11 +229,11 @@ header{
         justify-content: space-between;
         width: 80%; height: 80%;
         margin: 0 auto;
-        margin-top: 10vw;
         p{
             font-weight: bold;
-            color: #f1f1f1;
+            color: #FFFFFF;
             text-align: justify;
+            transition: 2s;
         }
         .blank{
             .text-wrpper{
@@ -203,13 +245,16 @@ header{
         }
         h3{
             font-weight: bold;
-            color: #f1f1f1;
+            color: #FFFFFF;
         }
         h2{
             font-weight: bold;
+            color: #FFFFFF;
         }
         .sct4-text-right{
             text-align: end;
+            transition: 1.5s;
+
         }
     }
 }
@@ -226,15 +271,26 @@ header{
         bottom: 30%; left: 63%;
         transform: translate(-50%,-50%);
     }
-    .sct5-line{
+    .sct5-line-box{
         position: absolute;
-        right: 0; top: 58.3%;
-        border: 1px solid #ffffff;
-        width: 30%;
+        right: 0; top: 55.6%;
+        width: 29%;
+        overflow: hidden;
+        .sct5-line{
+            border: 1px solid #ffffff;
+            transform: translateX(-100%);
+            transition: all ease 1s;
+        }
     }
+    
 }
 
 footer{
+    height: 50% !important;
+    > .fp-tableCell{
+        display: block !important;
+        height: 10% !important;
+    }
     .footer-inner{
         width: 80%;
         margin: 0 auto;

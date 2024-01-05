@@ -1,66 +1,157 @@
 window.onload = function () {
-
-    // window.addEventListener('scroll', function () {
-    //     console.log('hi');
-
-    // });
     
     $('#fullpage').fullpage({		      
         anchors: ['sct1', 'sct2', 'sct3','sct4','sct5'],
-        scrollingSpeed: 1000
+        scrollingSpeed: 1000,
+        afterLoad: function (anchorLink, index) {
+			// if(index == 3){
+            //     $('.sct3-img-box').addClass('active');
+            // }
+            if(index == 4){
+                $('.sct4-main-text').css(
+                    "color","#D9D9D9"  
+                )
+                $('.s1').css({
+                    "color":"#111111",
+                    "transition-delay":"1.5s"
+                }
+                )
+                $('.s2').css(
+                    {"color":"#111111",
+                    "transition-delay":"2.5s"}
+                )
+                $('.header-menu-item a').css(
+                    "color","black"
+                )
+                $('.header-menu-wrap svg path').css(
+                    "fill","black"
+                )
+                $('.header-search').css(
+                    "border","1px solid black"
+                )
+                $('#header-search-input').css(
+                    "color","black"
+                )
+            }
+            if(index == 5){
+                $('.sct5-line').css(
+                    "transform","translateX(0%)"
+                )
+                $('.header-menu-item a').css(
+                    "color","white"
+                )
+                $('.header-menu-wrap svg path').css(
+                    "fill","white"
+                )
+                $('.header-search').css(
+                    "border","1px solid white"
+                )
+                $('#header-search-input').css(
+                    "color","white"
+                )
+            }
+
+            if(index == 1){
+                $('.header-menu-item a').css(
+                    "color","white"
+                )
+                $('.header-menu-wrap svg path').css(
+                    "fill","white"
+                )
+                $('.header-search').css(
+                    "border","1px solid white"
+                )
+                $('#header-search-input').css(
+                    "color","white"
+                )
+            }
+            if(index == 2){
+                $('.header-menu-item a').css(
+                    "color","black"
+                )
+                $('.header-menu-wrap svg path').css(
+                    "fill","black"
+                )
+                $('.header-search').css(
+                    "border","1px solid black"
+                )
+                $('#header-search-input').css(
+                    "color","black"
+                )
+            }
+            if(index == 3){
+                $('.header-menu-item a').css(
+                    "color","white"
+                )
+                $('.header-menu-wrap svg path').css(
+                    "fill","white"
+                )
+                $('.header-search').css(
+                    "border","1px solid white"
+                )
+                $('#header-search-input').css(
+                    "color","white"
+                )
+                
+
+            }
+		},
+
+        onLeave: function (origin, index){
+            
+            if(index == 3){
+                $('.sct3-img-box').addClass('active');
+            }
+
+            
+
+        }
+
+        
+
     });           
+    
+    const sectionFirstTitle = document.querySelector('.first'),
+    sectionSecondTitle = document.querySelector('.second'),
+    main = document.querySelector('body'),
+    sectionS = document.querySelectorAll('.container');
+    
+    
+    function sctTop(){
+        let scrollTop = $(sectionS[0]).scrollTop();
+        if(scrollTop == 0){
+            sectionFirstTitle.style.transform = ('translateX(0%)');
+            sectionSecondTitle.style.transform = ('translateX(0%)');
+            // sectionSecondTitle.classList.add('activeMove');
+        }
+    }
+    sctTop();
+    //fp-completely
 
 
-    function runAction(direction) {
-        console.log(direction+' 실행 !!!!');
-      }
-      
-      var currentDirection = ''; // 현재의 방향을 나타내는 변수
-      var lastScrollTop = 0; // 방향을 구하기 위해 사용되는 변수
-      let i = 0;
-    //   const sectionS = document.querySelectorAll('.container');
-    //   let setTime;
-    //   $(window).scroll(function(event){
-    //     clearTimeout(setTime);
-    //         setTime = setTimeout(function () {
-                
-    //     var currentPos = $(this).scrollTop();
-    //      sectionS.forEach(function(sct,key){
-    //         //여기서 down한번에 한개씩
-    //         if (currentPos > lastScrollTop){
-    //             // 아래로 스크롤 중
-    //             if(currentDirection != 'down') { // 마지막 방향 확인
-    //             //  currentDirection = 'down';
-    //              runAction('down');
-    //             }
-                
-    //         } else {
-    //            // 위로 스크롤 중
-    //            if(currentDirection != 'up') { // 마지막 방향 확인
-    //             //  currentDirection = 'up';
-    //              runAction('up');
-    //            }
-    //         }
-    //       })
-    //      lastScrollTop = currentPos;
-    //     }, 200); // 방향을 구하기 위해 마지막 스크롤 지점을 저장
-    //   });
-
-
-
-
-
+    // console.log(sectionS[2].classList.contains('active'));
+    if(sectionS[2].classList.contains('active') == true){
+        console.log('hi');
+    }
 
 
 
     const scrlTop = document.getElementById('topBtn');
 
     window.addEventListener('scroll',function(){
+
+        console.log('scrol');
+
+        
+
+
+
         if(this.scrollY < 10){
             scrlTop.classList.remove('nohide');
         }else{
             scrlTop.classList.add('nohide');
         }
+
     });
 
 

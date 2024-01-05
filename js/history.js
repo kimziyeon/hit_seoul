@@ -112,6 +112,10 @@ window.onload = function () {
             historyText.innerHTML = `${hisSeoutlS[idx][count].text}`;
         }
     }
+
+    // window.addEventListener('scroll',function(){
+    //     console.log('scroll');
+    // })
     
     // $('body').prepend('<header></header>')
     // $('body').append('<footer></footer>')
@@ -139,13 +143,13 @@ window.onload = function () {
 
 
 
-    let pageNum = location.pathname.substr(1);
+    let pageNum = location.pathname.substr(location.pathname.lastIndexOf('/'));
 
     switch (pageNum) {
-        case 'his-seoul.html': pageHisSeoul();
+        case '/his-seoul.html': pageHisSeoul();
             break;
 
-        case 'his-mayor.html': pageHisMayor();
+        case '/his-mayor.html': pageHisMayor();
             break;
     };
 
