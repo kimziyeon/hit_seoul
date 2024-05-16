@@ -1,11 +1,25 @@
-# teamA_hit
-<h1>서울시 페이지 리뉴얼</h1>
+# 서울, 마이소울
+<p> 👤 Team Project ㅣ 4 person</p>
+<p> 🗓️ 2023.12 ~ 2024.01</p>
+<p>
+  🔗 <a href="https://kimziyeon.github.io/hit_seoul/" target="_blank"> https://kimziyeon.github.io/hit_seoul/</a>
+</p>
 
-<ul>
-  <li>인원 : 4명(개발 4명)</li>
-  <li>기간 : 2023년 12월 ~ 2024년 1월</li>
-  <li>주제 : 노후화된 서울시 페이지중 일부분을 새롭게 리뉴얼</li>
-</ul>
+<p>
+<b>대한민국 수도 서울시의 홈페이지 개선 프로젝트</b> <br/>
+서울시 홍보, 젊은 층의 접근성 향상을 목표로 지나치게 많은 정보들을 덜어내고 '서울' 자체에 집중 개선하였습니다.<br/>
+header, footer를 별도로 분리하여 import하고 JavaScript 외부 라이브러리를 사용해 원페이지 스크롤을 구현하고<br/>
+Json 사용으로 복잡하고 반복되는 데이터를 정리하였습니다.<br/>
+</p>
+
+<h4> 🛠️ Technology Stack<h4>
+<img src="https://img.shields.io/badge/html-E34F26?style=flat-square&logo=html"/>
+<img src="https://img.shields.io/badge/Javascript-ffb13b?style=flat-square&logo=javascript&logoColor=white"/>
+<img src="https://img.shields.io/badge/Sass-CC6699?style=flat-square&logo=sass&logoColor=white"/>
+<img src="https://img.shields.io/badge/figma-F24E1E?style=flat-square&logo=figma&logoColor=white"/>
+
+
+
 
 <h2>트러블 슈팅</h2>
 <ul>
