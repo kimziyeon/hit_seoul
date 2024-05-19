@@ -2,7 +2,7 @@
 <p> 👥 Team Project ㅣ 4 person</p>
 <p> 🗓️ 2023.12 ~ 2024.01</p>
 <p>
-  🔗 <a href="https://kimziyeon.github.io/hit_seoul/" target="_blank"> https://kimziyeon.github.io/hit_seoul/</a>
+  🔗 <a href="https://kimziyeon.github.io/hit_seoul/" target="_blank"> 배포 링크 바로가기</a>
 </p>
 
 <p>
